@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+// COLORS
+$firstColor: azure;
+$secondColor: black;
+
+// FONTS
+$firstFont: emizen;
+$secondFont: fastHand;
+$thirdFont: linkStart;
+$fourFont: olney;
+
+#container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/picts/bodyWallpaper.jpeg');
+  .present {
+  
+    text-align: center;
+    .infoMe {
+      .identify {
+        padding-top: 360px;
+        .name {
+          font-size: 3.8em;
+          color: $firstColor;
+          font-family: $firstFont;
+        }
+        .jobs {
+          margin-top: -16px;
+          letter-spacing: 2px;
+          font-size: 3.4em;
+          color: $firstColor;
+          font-family: $thirdFont;
+        }
+        #btnInfo {
+          font-size: 1.6em;
+          color: $firstColor;
+          margin-top: -28px;
+          background: transparent;
+          font-family: $fourFont;
+          border: 2px solid $firstColor;
+          transition: all 0.20ms ease;
+          &:hover {
+            color: $secondColor;
+            background: $firstColor;
+            transform: scale(1.1);
+            box-shadow: 0px 1px 9px 5px #FFFFFF;
+          }
+        }
+      }
+      .showInfo {
+        display: none;
+        padding-top: 180px;
+        .listBtnInfo {
+          #btnAbout, #btnProjets, #btnContact {
+            font-size: 1.6em;
+            color: $firstColor;
+            margin-top: -28px;
+            margin: 0px 10px 0px 10px;
+            background: transparent;
+            font-family: $fourFont;
+            border: 2px solid $firstColor;
+            transition: all 0.20ms ease;
+            &:hover {
+              color: $secondColor;
+              background: $firstColor;
+              transform: scale(1.1);
+              box-shadow: 0px 1px 9px 5px #FFFFFF;
+            }
+          }
+        }
+        .about {
+          margin: auto;
+          height: 600px;
+          max-width: 1600px;
+          .row {
+            .col-lg-4 {
+              .img-fluid {
+                height: 400px;
+                max-width: 600px;
+              }
+            }
+            .col-lg-8 {
+              margin-top: 40px;
+              p {
+                font-size: 2.0em;
+                color: $firstColor;
+                font-family: $thirdFont;
+              }
+            }
+          }
+        }
+        .projets {
+          display: none;
+          margin-top: 30px;
+          .row {
+            .col-lg-4 {
+              .img-fluid {
+                height: 150px;
+                max-width: 400px;
+              }
+            }
+          }
+        }
+        .contact {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: $firstFont;
+  src: url('/assets/fonts/emizen.otf');
+}
+
+@font-face {
+  font-family: $secondFont;
+  src: url('/assets/fonts/fastHand.otf');
+}
+
+@font-face {
+  font-family: $thirdFont;
+  src: url('/assets/fonts/linkStart.otf');
+}
+
+@font-face {
+  font-family: $fourFont;
+  src: url('/assets/fonts/olney.otf');
+}

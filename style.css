@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+#container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/bodyWallpaper.jpeg");
+}
+#container .present {
+  text-align: center;
+}
+#container .present .infoMe .identify {
+  padding-top: 360px;
+}
+#container .present .infoMe .identify .name {
+  font-size: 3.8em;
+  color: azure;
+  font-family: emizen;
+}
+#container .present .infoMe .identify .jobs {
+  margin-top: -16px;
+  letter-spacing: 2px;
+  font-size: 3.4em;
+  color: azure;
+  font-family: linkStart;
+}
+#container .present .infoMe .identify #btnInfo {
+  font-size: 1.6em;
+  color: azure;
+  margin-top: -28px;
+  background: transparent;
+  font-family: olney;
+  border: 2px solid azure;
+  transition: all 0.2ms ease;
+}
+#container .present .infoMe .identify #btnInfo:hover {
+  color: black;
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px #FFFFFF;
+}
+#container .present .infoMe .showInfo {
+  display: none;
+  padding-top: 180px;
+}
+#container .present .infoMe .showInfo .listBtnInfo #btnAbout, #container .present .infoMe .showInfo .listBtnInfo #btnProjets, #container .present .infoMe .showInfo .listBtnInfo #btnContact {
+  font-size: 1.6em;
+  color: azure;
+  margin-top: -28px;
+  margin: 0px 10px 0px 10px;
+  background: transparent;
+  font-family: olney;
+  border: 2px solid azure;
+  transition: all 0.2ms ease;
+}
+#container .present .infoMe .showInfo .listBtnInfo #btnAbout:hover, #container .present .infoMe .showInfo .listBtnInfo #btnProjets:hover, #container .present .infoMe .showInfo .listBtnInfo #btnContact:hover {
+  color: black;
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px #FFFFFF;
+}
+#container .present .infoMe .showInfo .about {
+  margin: auto;
+  height: 600px;
+  max-width: 1600px;
+}
+#container .present .infoMe .showInfo .about .row .col-lg-4 .img-fluid {
+  height: 400px;
+  max-width: 600px;
+}
+#container .present .infoMe .showInfo .about .row .col-lg-8 {
+  margin-top: 40px;
+}
+#container .present .infoMe .showInfo .about .row .col-lg-8 p {
+  font-size: 2em;
+  color: azure;
+  font-family: linkStart;
+}
+#container .present .infoMe .showInfo .projets {
+  display: none;
+  margin-top: 30px;
+}
+#container .present .infoMe .showInfo .projets .row .col-lg-4 .img-fluid {
+  height: 150px;
+  max-width: 400px;
+}
+#container .present .infoMe .showInfo .contact {
+  display: none;
+}
+
+@font-face {
+  font-family: emizen;
+  src: url("/assets/fonts/emizen.otf");
+}
+@font-face {
+  font-family: fastHand;
+  src: url("/assets/fonts/fastHand.otf");
+}
+@font-face {
+  font-family: linkStart;
+  src: url("/assets/fonts/linkStart.otf");
+}
+@font-face {
+  font-family: olney;
+  src: url("/assets/fonts/olney.otf");
+}/*# sourceMappingURL=style.css.map */
