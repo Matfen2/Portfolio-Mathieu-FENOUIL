@@ -16,13 +16,12 @@ body {
   background-repeat: no-repeat;
   background-image: url("/assets/picts/bodyWallpaper.jpeg");
 }
-#container .present {
-  text-align: center;
-}
 #container .present .infoMe .identify {
+  text-align: center;
   padding-top: 360px;
 }
 #container .present .infoMe .identify .name {
+  letter-spacing: 4px;
   font-size: 3.8em;
   color: azure;
   font-family: emizen;
@@ -38,12 +37,14 @@ body {
   font-size: 1.6em;
   color: azure;
   margin-top: -28px;
+  border-radius: 5px;
   background: transparent;
   font-family: olney;
   border: 2px solid azure;
   transition: all 0.2ms ease;
 }
 #container .present .infoMe .identify #btnInfo:hover {
+  font-weight: bold;
   color: black;
   background: azure;
   transform: scale(1.1);
@@ -51,7 +52,10 @@ body {
 }
 #container .present .infoMe .showInfo {
   display: none;
-  padding-top: 180px;
+  padding-top: 90px;
+}
+#container .present .infoMe .showInfo .listBtnInfo {
+  text-align: center;
 }
 #container .present .infoMe .showInfo .listBtnInfo #btnAbout, #container .present .infoMe .showInfo .listBtnInfo #btnProjets, #container .present .infoMe .showInfo .listBtnInfo #btnContact {
   font-size: 1.6em;
@@ -67,35 +71,254 @@ body {
   color: black;
   background: azure;
   transform: scale(1.1);
-  box-shadow: 0px 1px 9px 5px #FFFFFF;
+  box-shadow: 0px 1px 9px 5px azure;
 }
 #container .present .infoMe .showInfo .about {
   margin: auto;
   height: 600px;
   max-width: 1600px;
 }
-#container .present .infoMe .showInfo .about .row .col-lg-4 .img-fluid {
+#container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
   height: 400px;
   max-width: 600px;
 }
-#container .present .infoMe .showInfo .about .row .col-lg-8 {
-  margin-top: 40px;
+#container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
+  margin-top: 60px;
 }
-#container .present .infoMe .showInfo .about .row .col-lg-8 p {
-  font-size: 2em;
+#container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
+  font-size: 1.6em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: emizen;
+}
+#container .present .infoMe .showInfo .about #differentMe {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 7px;
+  border: 2px solid azure;
+}
+#container .present .infoMe .showInfo .about #differentMe .different {
+  letter-spacing: 2px;
+  text-align: center;
   color: azure;
   font-family: linkStart;
+}
+#container .present .infoMe .showInfo .about #differentMe .row {
+  margin-top: 25px;
+}
+#container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .fa-regular {
+  margin: auto;
+  display: block;
+  font-size: 2.8em;
+  text-align: center;
+  justify-content: center;
+  color: azure;
+}
+#container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
+  margin-top: 12px;
+  font-size: 1.6em;
+  color: azure;
+  text-align: center;
+  font-family: olney;
 }
 #container .present .infoMe .showInfo .projets {
   display: none;
   margin-top: 30px;
 }
-#container .present .infoMe .showInfo .projets .row .col-lg-4 .img-fluid {
+#container .present .infoMe .showInfo .projets #listProjets {
+  margin: auto;
+  max-width: 1200px;
+}
+#container .present .infoMe .showInfo .projets #listProjets .col-lg-4 {
+  margin-top: -15px;
+  padding: -10px;
+}
+#container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
+  opacity: 0.7;
+  height: 145px;
+  cursor: pointer;
+  max-width: 450px;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+#container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#container .present .infoMe .showInfo .projets #infoProjet {
+  margin: 29px auto;
+  max-width: 1800px;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
+  height: 550px;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
+  margin-top: 50px;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
+  font-size: 1.8em;
+  color: azure;
+  font-family: linkStart;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView {
+  margin-top: 30px;
+  text-align: center;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button {
+  font-size: 1.5em;
+  color: azure;
+  background: transparent;
+  font-family: olney;
+  border: 2px solid azure;
+  transition: all 0.2s ease;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button:hover {
+  color: black;
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px #FFFFFF;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button a {
+  color: azure;
+  text-decoration: none;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button a:hover {
+  color: black;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView #btnCode {
+  margin-left: 40px;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
+  margin-top: 28px;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .tools {
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 2px;
+  color: azure;
+  font-family: emizen;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row {
+  margin-top: 18px;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetFirstTool {
   height: 150px;
   max-width: 400px;
 }
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetSecondTool {
+  height: 220px;
+  margin-top: -28px;
+  max-width: 480px;
+}
+#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetThirdTool {
+  height: 180px;
+  max-width: 460px;
+}
 #container .present .infoMe .showInfo .contact {
   display: none;
+}
+#container .present .infoMe .showInfo .contact .card {
+  margin: -10px auto;
+  max-width: 1200px;
+  border: none;
+  background: transparent;
+}
+#container .present .infoMe .showInfo .contact .card .card-body {
+  color: black;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .reason {
+  text-align: center;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 {
+  line-height: 70px;
+  margin-top: 100px;
+  margin-right: -100px;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .home, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .phone, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .email {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: center;
+  flex-direction: row;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .home .fa-solid, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .phone .fa-solid, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .email .fa-solid {
+  font-size: 1.6em;
+  color: azure;
+  margin-top: 23px;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .home p, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .phone p, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .email p {
+  font-size: 1.4em;
+  color: azure;
+  font-family: olney;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .listSocial {
+  text-align: center;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .listSocial .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  color: azure;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2ms ease;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .listSocial .fa:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px azure, 0 0 10px azure, 2px 2px 5px rgba(206, 89, 55, 0);
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 {
+  margin-top: 35px;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 .reason {
+  color: azure;
+  letter-spacing: 2px;
+  font-family: linkStart;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form {
+  margin-top: 20px;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row {
+  top: 50%;
+  left: 10%;
+  width: 650px;
+  position: relative;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 input {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 270px;
+  border-radius: 5px;
+  border: 2px solid azure;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-12 textarea {
+  margin: auto;
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
+  top: 50%;
+  left: -3%;
+  padding: 5px;
+  position: relative;
+  margin: 13px auto;
+  display: block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  color: azure;
+  font-family: olney;
+  transition: all 0.2ms ease;
+  border: 2px solid azure;
+  background-color: transparent;
+}
+#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend:hover {
+  color: black;
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px azure;
 }
 
 @font-face {

@@ -10,6 +10,7 @@ body {
 // COLORS
 $firstColor: azure;
 $secondColor: black;
+$thirdColor: darkgreen;
 
 // FONTS
 $firstFont: emizen;
@@ -26,12 +27,12 @@ $fourFont: olney;
   background-repeat: no-repeat;
   background-image: url('/assets/picts/bodyWallpaper.jpeg');
   .present {
-  
-    text-align: center;
     .infoMe {
       .identify {
+        text-align: center;
         padding-top: 360px;
         .name {
+          letter-spacing: 4px;
           font-size: 3.8em;
           color: $firstColor;
           font-family: $firstFont;
@@ -47,11 +48,13 @@ $fourFont: olney;
           font-size: 1.6em;
           color: $firstColor;
           margin-top: -28px;
+          border-radius: 5px;
           background: transparent;
           font-family: $fourFont;
           border: 2px solid $firstColor;
           transition: all 0.20ms ease;
           &:hover {
+            font-weight: bold;
             color: $secondColor;
             background: $firstColor;
             transform: scale(1.1);
@@ -61,8 +64,9 @@ $fourFont: olney;
       }
       .showInfo {
         display: none;
-        padding-top: 180px;
+        padding-top: 90px;
         .listBtnInfo {
+          text-align: center;
           #btnAbout, #btnProjets, #btnContact {
             font-size: 1.6em;
             color: $firstColor;
@@ -76,15 +80,16 @@ $fourFont: olney;
               color: $secondColor;
               background: $firstColor;
               transform: scale(1.1);
-              box-shadow: 0px 1px 9px 5px #FFFFFF;
+              box-shadow: 0px 1px 9px 5px $firstColor;
             }
           }
         }
+        // ABOUT
         .about {
           margin: auto;
           height: 600px;
           max-width: 1600px;
-          .row {
+          #infoMe {
             .col-lg-4 {
               .img-fluid {
                 height: 400px;
@@ -92,29 +97,258 @@ $fourFont: olney;
               }
             }
             .col-lg-8 {
-              margin-top: 40px;
+              margin-top: 60px;
               p {
-                font-size: 2.0em;
+                font-size: 1.6em;
                 color: $firstColor;
-                font-family: $thirdFont;
+                letter-spacing: 2px;
+                font-family: $firstFont;
+              }
+            }
+          }
+          #differentMe {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 7px;
+            border: 2px solid azure;
+            
+            .different {
+              letter-spacing: 2px;
+              text-align: center;
+              color: $firstColor;
+              font-family: $thirdFont;
+            }
+            .row {
+              margin-top: 25px;
+              .col-lg-4 {
+                .fa-regular {
+                  margin: auto;
+                  display: block;
+                  font-size: 2.8em;
+                  text-align: center;
+                  justify-content: center;
+                  color: $firstColor;
+                }
+                .describe {
+                  margin-top: 12px;
+                  font-size: 1.6em;
+                  color: $firstColor;
+                  text-align: center;
+                  font-family: $fourFont;
+                }
               }
             }
           }
         }
+        // PROJETS
         .projets {
           display: none;
           margin-top: 30px;
-          .row {
+          #listProjets {
+            margin: auto;
+            max-width: 1200px;
             .col-lg-4 {
+              margin-top: -15px;
+              padding: -10px;
               .img-fluid {
-                height: 150px;
-                max-width: 400px;
+                opacity: 0.7;
+                height: 145px;
+                cursor: pointer;
+                max-width: 450px;
+                border-radius: 5px;
+                transition: all 0.10s ease;
+                &:hover {
+                  opacity: 1.0;
+                  transform: scale(1.1);
+                }
+              }
+            }
+          }
+          #infoProjet {
+            margin: 29px auto;
+            max-width: 1800px;
+            .col-lg-7 {
+              #projetImage {
+                height: 550px
+              };
+            }
+            .col-lg-5 {
+              margin-top: 50px;
+              .pitch {
+                font-size: 1.8em;
+                color: $firstColor;
+                font-family: $thirdFont;
+              }
+              .listBtnView {
+                margin-top: 30px;
+                text-align: center;
+                button {
+                  font-size: 1.5em;
+                  color: $firstColor;
+                  background: transparent;
+                  font-family: $fourFont;
+                  border: 2px solid $firstColor;
+                  transition: all 0.20s ease;
+                  &:hover {
+                    color: $secondColor;
+                    background: $firstColor;
+                    transform: scale(1.1);
+                    box-shadow: 0px 1px 9px 5px #FFFFFF;
+                  }
+                  a {
+                    color: $firstColor;
+                    text-decoration: none;
+                    &:hover {
+                      color: $secondColor;
+                    }
+                  }
+                }
+                #btnCode {
+                  margin-left: 40px;
+                }
+              }
+              #projetFrameworks {
+                margin-top: 28px;
+                .tools {
+                  font-size: 2.0em;
+                  text-align: center;
+                  letter-spacing: 2px;
+                  color: $firstColor;
+                  font-family: $firstFont;
+                }
+                .row {
+                  margin-top: 18px;
+                  .col-lg-4 {
+                    #projetFirstTool {
+                      height: 150px;
+                      max-width: 400px;
+                    }
+                    #projetSecondTool {
+                      height: 220px;
+                      margin-top: -28px;
+                      max-width: 480px;
+                    }
+                    #projetThirdTool {
+                      height: 180px;
+                      max-width: 460px;
+                    }
+                  }
+                }
               }
             }
           }
         }
+        // CONTACT
         .contact {
           display: none;
+          .card {
+            margin: -10px auto;
+            max-width: 1200px;
+            border: none;
+            background: transparent;
+            .card-body {
+              color: $secondColor;
+              .reason {
+                text-align: center;
+              }
+              .row {
+                .col-lg-4 {
+                  line-height: 70px;
+                  margin-top: 100px;
+                  margin-right: -100px;
+                  .home, .phone, .email {
+                    display: flex;
+                    column-gap: 20px;
+                    justify-content: center;
+                    flex-direction: row;
+                    .fa-solid {
+                      font-size: 1.6em;
+                      color: $firstColor;
+                      margin-top: 23px;
+                    }
+                    p {
+                      font-size: 1.4em;
+                      color: $firstColor;
+                      font-family: $fourFont;
+                    }
+                  }
+                  .listSocial {
+                    text-align: center;
+                    .fa {
+                      padding: 20px;
+                      font-size: 30px;
+                      width: 50px;
+                      color: $firstColor;
+                      text-align: center;
+                      text-decoration: none;
+                      transition: all 0.20ms ease;
+                      &:hover {
+                        transform: scale(1.1);
+                        text-shadow: 0 0 5px $firstColor, 0 0 10px $firstColor, 2px 2px 5px rgba(206,89,55,0);
+                      }
+                    }
+                  }
+                }
+                .col-lg-8 {
+                  margin-top: 35px;
+                  .reason {
+                    color: $firstColor;
+                    letter-spacing: 2px;
+                    font-family: $thirdFont;
+                  }
+                  form {
+                    margin-top: 20px;
+                    .row {
+                      top: 50%;
+                      left: 10%;
+                      width: 650px;
+                      position: relative;
+                      .col-lg-6 {
+                        input {
+                          display: block;
+                          margin: auto;
+                          padding: 10px;
+                          width: 270px;
+                          border-radius: 5px;
+                          border: 2px solid $firstColor;
+                        }
+                      }
+                      .col-lg-12 {
+                        textarea {
+                          margin: auto;
+                          display: block;
+                          padding: 10px;
+                          margin-top: 20px;
+                          border-radius: 5px;
+                        }
+                      }
+                    }
+                    #btnSend {
+                      top: 50%;
+                      left: -3%;
+                      padding: 5px;
+                      position: relative;
+                      margin: 13px auto;
+                      display: block;
+                      font-size: 1.3em;
+                      border-radius: 5px;
+                      color: $firstColor;
+                      font-family: $fourFont;
+                      transition: all 0.20ms ease;
+                      border: 2px solid $firstColor;
+                      background-color: transparent;
+                      &:hover {
+                        color: $secondColor;
+                        background: $firstColor;
+                        transform: scale(1.1);
+                        box-shadow: 0px 1px 9px 5px $firstColor;
+                      }
+                    }
+                  }
+                }
+              }            
+            }
+          }
         }
       }
     }
