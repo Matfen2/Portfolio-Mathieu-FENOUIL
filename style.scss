@@ -111,7 +111,6 @@ $fourFont: olney;
             margin-top: 10px;
             border-radius: 7px;
             border: 2px solid azure;
-            
             .different {
               letter-spacing: 2px;
               text-align: center;
@@ -173,10 +172,12 @@ $fourFont: olney;
               };
             }
             .col-lg-5 {
-              margin-top: 50px;
+              margin-top: 70px;
               .pitch {
                 font-size: 1.8em;
                 color: $firstColor;
+                text-align: center;
+                letter-spacing: 2px;
                 font-family: $thirdFont;
               }
               .listBtnView {
@@ -208,9 +209,9 @@ $fourFont: olney;
                 }
               }
               #projetFrameworks {
-                margin-top: 28px;
+                margin-top: 48px;
                 .tools {
-                  font-size: 2.0em;
+                  font-size: 2.2em;
                   text-align: center;
                   letter-spacing: 2px;
                   color: $firstColor;
@@ -218,19 +219,12 @@ $fourFont: olney;
                 }
                 .row {
                   margin-top: 18px;
+                  max-width: 650px;
+                  margin-left: 100px;
                   .col-lg-4 {
-                    #projetFirstTool {
-                      height: 150px;
-                      max-width: 400px;
-                    }
-                    #projetSecondTool {
-                      height: 220px;
-                      margin-top: -28px;
-                      max-width: 480px;
-                    }
-                    #projetThirdTool {
-                      height: 180px;
-                      max-width: 460px;
+                    .fa-brands {
+                      font-size: 4.8em;
+                      color: $firstColor;
                     }
                   }
                 }
@@ -267,7 +261,7 @@ $fourFont: olney;
                       margin-top: 23px;
                     }
                     p {
-                      font-size: 1.4em;
+                      font-size: 1.8em;
                       color: $firstColor;
                       font-family: $fourFont;
                     }
@@ -373,4 +367,977 @@ $fourFont: olney;
 @font-face {
   font-family: $fourFont;
   src: url('/assets/fonts/olney.otf');
+}
+
+// RESPONSIVE
+@media screen and (max-width: 1440px) {
+  #container {
+    .present {
+      .infoMe {
+        .identify {
+          padding-top: 390px;
+        }
+        .showInfo {
+          .about {
+            #infoMe {
+              .col-lg-4 {
+                .img-fluid {
+                  height: 450px;
+                  max-width: 450px;
+                }
+              }
+              .col-lg-8 {
+                margin-left: -40px;
+              }
+            }
+            #differentMe {
+              padding: 5px;
+              width: 100%;
+              display: block;
+              margin: 18px auto;
+              max-width: 1200px;
+              .different {
+                font-size: 2.1em;
+              }
+              .row {
+                .col-lg-4 {
+                  .describe {
+                    font-size: 1.4em;
+                  }
+                }
+              }
+            }
+          }
+          .projets {
+            #listProjets {
+              .col-lg-4 {
+                .img-fluid {
+                  height: 165px;
+                }
+              }
+            }
+            #infoProjet {
+              .col-lg-7 {
+                #projetImage {
+                  height: 625px;
+                }
+              }
+              .col-lg-5 {
+                margin-top: 80px;
+                .pitch {
+                  font-size: 1.9em;
+                }
+                #projetFrameworks {
+                  margin-top: 38px;
+                  .row {
+                    .col-lg-4 {
+                      #projetFirstTool {
+                        height: 200px;
+                        max-width: 250px;
+                      }
+                      #projetSecondTool {
+                        height: 290px;
+                        margin-top: -40px;
+                      }
+                      #projetThirdTool {
+                        height: 230px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  #container {
+    .present {
+      .infoMe {
+        .identify {
+          padding-top: 390px;
+        }
+        .showInfo {
+          .about {
+            #infoMe {
+              .col-lg-4 {
+                .img-fluid {
+                  height: 430px;
+                  max-width: 450px;
+                }
+              }
+              .col-lg-8 {
+                margin-left: -40px;
+                p {
+                  font-size: 1.4em;
+                }
+              }
+            }
+            #differentMe {
+              padding: 5px;
+              width: 100%;
+              height: 240px;
+              display: block;
+              margin: 18px auto;
+              max-width: 1150px;
+              .different {
+                font-size: 1.9em;
+              }
+              .row {
+                .col-lg-4 {
+                  .describe {
+                    font-size: 1.1em;
+                  }
+                }
+              }
+            }
+          }
+          .projets {
+            #listProjets {
+              .col-lg-4 {
+                .img-fluid {
+                  height: 125px;
+                }
+              }
+            }
+            #infoProjet {
+              .col-lg-7 {
+                #projetImage {
+                  height: 525px;
+                }
+              }
+              .col-lg-5 {
+                margin-top: 80px;
+                .pitch {
+                  font-size: 1.9em;
+                }
+                #projetFrameworks {
+                  margin-top: 38px;
+                  .row {
+                    .col-lg-4 {
+                      #projetFirstTool {
+                        height: 100px;
+                        max-width: 250px;
+                      }
+                      #projetSecondTool {
+                        height: 150px;
+                        margin-top: -25px;
+                      }
+                      #projetThirdTool {
+                        height: 110px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .contact {
+            .card {
+              margin-left: 120px;
+              .card-body {
+                .row {
+                  .col-lg-8 {
+                    form {
+                      #btnSend {
+                        left: 5%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #container {
+    .present {
+      .infoMe {
+        .identify {
+          padding-top: 340px;
+        }
+        .showInfo {
+          .about {
+            #infoMe {
+              .col-lg-4 {
+                .img-fluid {
+                  height: 370px;
+                  max-width: 400px;
+                }
+              }
+              .col-lg-8 {
+                margin-left: -20px;
+                p {
+                  font-size: 1.2em;
+                }
+              }
+            }
+            #differentMe {
+              padding: 5px;
+              width: 100%;
+              height: 270px;
+              display: block;
+              margin: 18px auto;
+              max-width: 950px;
+              .different {
+                font-size: 1.9em;
+              }
+              .row {
+                .col-lg-4 {
+                  .describe {
+                    font-size: 1.1em;
+                  }
+                }
+              }
+            }
+          }
+          .projets {
+            margin-top: 40px;
+            #listProjets {
+              .col-lg-4 {
+                .img-fluid {
+                  height: 105px;
+                }
+              }
+            }
+            #infoProjet {
+              .col-lg-7 {
+                #projetImage {
+                  height: 525px;
+                }
+              }
+              .col-lg-5 {
+                margin-top: 80px;
+                .pitch {
+                  font-size: 1.9em;
+                }
+                #projetFrameworks {
+                  margin-top: 38px;
+                  .row {
+                    margin-left: 10px;
+                    .col-lg-4 {
+                      .fa-brands {
+                        font-size: 4.4em;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .contact {
+            .card {
+              margin-left: 60px;
+              .card-body {
+                .row {
+                  .col-lg-4 {
+                    margin-right: -70px;
+                  }
+                  .col-lg-8 {
+                    form {
+                      #btnSend {
+                        left: 10%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #container {
+    height: 170vh;
+    .present {
+      .infoMe {
+        .identify {
+          padding-top: 390px;
+        }
+        .showInfo {
+          .about {
+            max-width: 800px;
+            #infoMe {
+              text-align: center;
+              .col-lg-4 {
+                .img-fluid {
+                  height: 400px;
+                  max-width: 450px;
+                }
+              }
+              .col-lg-8 {
+                margin-left: -10px;
+                p {
+                  font-size: 1.2em;
+                }
+              }
+            }
+            #differentMe {
+              padding: 5px;
+              width: 100%;
+              height: 460px;
+              display: block;
+              margin: 18px auto;
+              max-width: 950px;
+              .different {
+                font-size: 2.1em;
+              }
+              .row {
+                .col-lg-4 {
+                  .describe {
+                    font-size: 1.2em;
+                  }
+                }
+              }
+            }
+          }
+          .projets {
+            margin-top: 40px;
+            #listProjets {
+              .col-lg-4 {
+                text-align: center;
+                .img-fluid {
+                  height: 125px;
+                }
+              }
+            }
+            #infoProjet {
+              .col-lg-7 {
+                #projetImage {
+                  margin: auto;
+                  display: block;
+                  text-align: center;
+                  height: 505px;
+                  max-width: 650px;
+                }
+              }
+              .col-lg-5 {
+                margin-top: 40px;
+                .pitch {
+                  height: 40px;
+                  font-size: 1.9em;
+                  overflow: auto;
+                }
+                #projetFrameworks {
+                  margin-top: 38px;
+                  .row {
+                    margin-left: 215px;
+                  }
+                }
+              }
+            }
+          }
+          .contact {
+            .card {
+              margin: -80px auto;
+              margin-left: 60px;
+              max-width: 850px;
+              .card-body {
+                .row {
+                  .col-lg-4 {
+                    margin-right: -70px;
+                  }
+                  .col-lg-8 {
+                    form {
+                      .row {
+                        .col-lg-6 {
+                          input {
+                            width: 470px;
+                            margin: 10px auto;
+                          }
+                        }
+                        .col-lg-12 {
+                          textarea {
+                            margin-left: 40px;
+                          }
+                        }
+                      }
+                      #btnSend {
+                        left: 0%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    height: 170vh;
+    .present {
+      .infoMe {
+        .identify {
+          padding-top: 390px;
+        }
+        .showInfo {
+          .about {
+            max-width: 800px;
+            #infoMe {
+              text-align: center;
+              .col-lg-4 {
+                .img-fluid {
+                  height: 400px;
+                  max-width: 450px;
+                }
+              }
+              .col-lg-8 {
+                max-width: 750px;
+                margin-left: 20px;
+                p {
+                  font-size: 1.2em;
+                }
+              }
+            }
+            #differentMe {
+              padding: 5px;
+              width: 100%;
+              height: 460px;
+              display: block;
+              margin: 18px auto;
+              max-width: 750px;
+              .different {
+                font-size: 2.1em;
+              }
+              .row {
+                .col-lg-4 {
+                  .describe {
+                    font-size: 1.2em;
+                  }
+                }
+              }
+            }
+          }
+          .projets {
+            margin-top: 40px;
+            #listProjets {
+              .col-lg-4 {
+                text-align: center;
+                .img-fluid {
+                  height: 135px;
+                }
+              }
+            }
+            #infoProjet {
+              .col-lg-7 {
+                #projetImage {
+                  margin: auto;
+                  display: block;
+                  text-align: center;
+                  height: 505px;
+                  max-width: 650px;
+                }
+              }
+              .col-lg-5 {
+                margin-top: 40px;
+                .pitch {
+                  height: 40px;
+                  font-size: 1.9em;
+                  overflow: auto;
+                }
+                #projetFrameworks {
+                  margin-top: 38px;
+                  .row {
+                    margin-left: 105px;
+                  }
+                }
+              }
+            }
+          }
+          .contact {
+            .card {
+              margin: -80px auto;
+              margin-left: 20px;
+              max-width: 850px;
+              .card-body {
+                .row {
+                  .col-lg-8 {
+                    form {
+                      .row {
+                        .col-lg-6 {
+                          margin-left: -20px;
+                          input {
+                            width: 490px;
+                            margin: 10px auto;
+                          }
+                        }
+                        .col-lg-12 {
+                          textarea {
+                            margin-left: 20px;
+                          }
+                        }
+                      }
+                      #btnSend {
+                        left: 0%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #container {
+    height: 220vh;
+    .present {
+      .infoMe {
+        .identify {
+          padding-top: 270px;
+        }
+        .showInfo {
+          .listBtnInfo {
+            #btnAbout, #btnProjets, #btnContact {
+              font-size: 1.4em;
+              margin: 10px;
+            }
+          }
+          .about {
+            max-width: 800px;
+            #infoMe {
+              text-align: center;
+              .col-lg-4 {
+                .img-fluid {
+                  height: 400px;
+                  max-width: 400px;
+                  margin-right: -60px;
+                }
+              }
+              .col-lg-8 {
+                margin-top: 20px;
+                max-width: 420px;
+                margin-left: 20px;
+                p {
+                  font-size: 1.1em;
+                }
+              }
+            }
+            #differentMe {
+              padding: 5px;
+              width: 100%;
+              height: 760px;
+              display: block;
+              margin: 18px auto;
+              max-width: 320px;
+              .different {
+                font-size: 2.1em;
+              }
+              .row {
+                .col-lg-4 {
+                  .describe {
+                    font-size: 1.2em;
+                  }
+                }
+              }
+            }
+          }
+          .projets {
+            margin-top: 40px;
+            #listProjets {
+              .col-lg-4 {
+                text-align: center;
+                .img-fluid {
+                  height: 155px;
+                }
+              }
+            }
+            #infoProjet {
+              .col-lg-7 {
+                #projetImage {
+                  margin: auto;
+                  display: block;
+                  text-align: center;
+                  height: 545px;
+                  max-width: 650px;
+                }
+              }
+              .col-lg-5 {
+                margin-top: 40px;
+                .pitch {
+                  height: 40px;
+                  font-size: 1.9em;
+                  overflow: auto;
+                }
+                #projetFrameworks {
+                  margin-top: 38px;
+                  .row {
+                    margin-top: -28px;
+                    max-width: 250px;
+                    margin-left: 135px;
+                    .col-lg-4 {
+                      .fa-brands {
+                        margin-top: 40px;
+                        font-size: 5.8em;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .contact {
+            .card {
+              margin: -80px auto;
+              margin-left: 40px;
+              max-width: 350px;
+              .card-body {
+                .row {
+                  .col-lg-8 {
+                    form {
+                      .row {
+                        .col-lg-6 {
+                          margin-left: -180px;
+                          input {
+                            width: 270px;
+                            margin: 10px auto;
+                          }
+                        }
+                        .col-lg-12 {
+                          textarea {
+                            width: 250px;
+                            margin-left: 6px;
+                          }
+                        }
+                      }
+                      #btnSend {
+                        left: 0%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #container {
+    height: 250vh;
+    .present {
+      .infoMe {
+        .identify {
+          padding-top: 290px;
+          .name {
+            font-size: 3.0em;
+          }
+          .jobs {
+            font-size: 2.8em;
+          }
+        }
+        .showInfo {
+          .listBtnInfo {
+            #btnAbout, #btnProjets, #btnContact {
+              font-size: 1.4em;
+              margin: 10px;
+            }
+          }
+          .about {
+            max-width: 300px;
+            #infoMe {
+              text-align: center;
+              .col-lg-4 {
+                .img-fluid {
+                  height: 400px;
+                  max-width: 400px;
+                  margin-right: -60px;
+                }
+              }
+              .col-lg-8 {
+                margin-top: 20px;
+                max-width: 420px;
+                margin-left: -0px;
+                p {
+                  font-size: 1.1em;
+                }
+              }
+            }
+            #differentMe {
+              padding: 5px;
+              width: 100%;
+              height: 830px;
+              display: block;
+              margin: 18px auto;
+              max-width: 320px;
+              .different {
+                font-size: 2.1em;
+              }
+              .row {
+                .col-lg-4 {
+                  .describe {
+                    font-size: 1.2em;
+                  }
+                }
+              }
+            }
+          }
+          .projets {
+            margin-top: 40px;
+            #listProjets {
+              .col-lg-4 {
+                text-align: center;
+                .img-fluid {
+                  height: 155px;
+                }
+              }
+            }
+            #infoProjet {
+              .col-lg-7 {
+                #projetImage {
+                  margin: auto;
+                  display: block;
+                  text-align: center;
+                  height: 545px;
+                  max-width: 650px;
+                }
+              }
+              .col-lg-5 {
+                margin-top: 40px;
+                .pitch {
+                  height: 40px;
+                  font-size: 1.9em;
+                  overflow: auto;
+                }
+                #projetFrameworks {
+                  margin-top: 38px;
+                  .row {
+                    margin-top: -28px;
+                    max-width: 250px;
+                    margin-left: 115px;
+                    .col-lg-4 {
+                      .fa-brands {
+                        margin-top: 40px;
+                        font-size: 5.8em;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .contact {
+            .card {
+              margin: -80px auto;
+              margin-left: 10px;
+              max-width: 350px;
+              .card-body {
+                .row {
+                  .col-lg-8 {
+                    form {
+                      .row {
+                        .col-lg-6 {
+                          margin-left: -180px;
+                          input {
+                            width: 270px;
+                            margin: 10px auto;
+                          }
+                        }
+                        .col-lg-12 {
+                          textarea {
+                            width: 250px;
+                            margin-left: 6px;
+                          }
+                        }
+                      }
+                      #btnSend {
+                        left: 0%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #container {
+    height: 250vh;
+    .present {
+      .infoMe {
+        .identify {
+          padding-top: 290px;
+          .name {
+            font-size: 3.0em;
+          }
+          .jobs {
+            font-size: 2.8em;
+          }
+        }
+        .showInfo {
+          .listBtnInfo {
+            #btnAbout, #btnProjets, #btnContact {
+              font-size: 1.4em;
+              margin: 10px;
+            }
+          }
+          .about {
+            max-width: 300px;
+            #infoMe {
+              text-align: center;
+              .col-lg-4 {
+                .img-fluid {
+                  height: 400px;
+                  max-width: 400px;
+                  margin-right: -60px;
+                }
+              }
+              .col-lg-8 {
+                margin-top: 20px;
+                max-width: 420px;
+                margin-left: -0px;
+                p {
+                  font-size: 1.1em;
+                }
+              }
+            }
+            #differentMe {
+              padding: 5px;
+              width: 100%;
+              height: 830px;
+              display: block;
+              margin: 18px auto;
+              max-width: 320px;
+              .different {
+                font-size: 2.1em;
+              }
+              .row {
+                .col-lg-4 {
+                  .describe {
+                    font-size: 1.2em;
+                  }
+                }
+              }
+            }
+          }
+          .projets {
+            margin-top: 40px;
+            #listProjets {
+              .col-lg-4 {
+                text-align: center;
+                .img-fluid {
+                  height: 155px;
+                }
+              }
+            }
+            #infoProjet {
+              .col-lg-7 {
+                #projetImage {
+                  margin: auto;
+                  display: block;
+                  text-align: center;
+                  height: 545px;
+                  max-width: 650px;
+                }
+              }
+              .col-lg-5 {
+                margin-top: 40px;
+                .pitch {
+                  height: 140px;
+                  font-size: 1.9em;
+                  overflow: auto;
+                }
+                .listBtnView {
+                  button {
+                    display: block;
+                    margin: 10px auto;
+                  }
+                  #btnCode {
+                    margin-left: 60px;
+                  }
+                }
+                #projetFrameworks {
+                  margin-top: 38px;
+                  .tools {
+                    font-size: 2.0em;
+                  }
+                  .row {
+                    margin-top: -28px;
+                    max-width: 250px;
+                    margin-left: 95px;
+                    .col-lg-4 {
+                      .fa-brands {
+                        margin-top: 40px;
+                        font-size: 5.8em;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .contact {
+            .card {
+              margin: -80px auto;
+              margin-left: 10px;
+              max-width: 290px;
+              .card-body {
+                .row {
+                  .col-lg-4 {
+                    .home, .phone, .email {
+                      p {
+                        font-size: 1.4em;
+                      }
+                    }
+                  }
+                  .col-lg-8 {
+                    form {
+                      .row {
+                        .col-lg-6 {
+                          margin-left: -210px;
+                          input {
+                            width: 270px;
+                            margin: 10px auto;
+                          }
+                        }
+                        .col-lg-12 {
+                          textarea {
+                            width: 250px;
+                            margin-left: -22px;
+                          }
+                        }
+                      }
+                      #btnSend {
+                        left: 0%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
