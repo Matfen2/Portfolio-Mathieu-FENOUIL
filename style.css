@@ -1,328 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: auto;
-  display: block;
-}
-
-#container {
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/picts/bodyWallpaper.jpeg");
-}
-#container .present .infoMe .identify {
-  text-align: center;
-  padding-top: 360px;
-}
-#container .present .infoMe .identify .name {
-  letter-spacing: 4px;
-  font-size: 3.8em;
-  color: azure;
-  font-family: emizen;
-}
-#container .present .infoMe .identify .jobs {
-  margin-top: -16px;
-  letter-spacing: 2px;
-  font-size: 3.4em;
-  color: azure;
-  font-family: linkStart;
-}
-#container .present .infoMe .identify #btnInfo {
-  font-size: 1.6em;
-  color: azure;
-  margin-top: -28px;
-  border-radius: 5px;
-  background: transparent;
-  font-family: olney;
-  border: 2px solid azure;
-  transition: all 0.2ms ease;
-}
-#container .present .infoMe .identify #btnInfo:hover {
-  font-weight: bold;
-  color: black;
-  background: azure;
-  transform: scale(1.1);
-  box-shadow: 0px 1px 9px 5px #FFFFFF;
-}
-#container .present .infoMe .showInfo {
-  display: none;
-  padding-top: 90px;
-}
-#container .present .infoMe .showInfo .listBtnInfo {
-  text-align: center;
-}
-#container .present .infoMe .showInfo .listBtnInfo #btnAbout, #container .present .infoMe .showInfo .listBtnInfo #btnProjets, #container .present .infoMe .showInfo .listBtnInfo #btnContact {
-  font-size: 1.6em;
-  color: azure;
-  margin-top: -28px;
-  margin: 0px 10px 0px 10px;
-  background: transparent;
-  font-family: olney;
-  border: 2px solid azure;
-  transition: all 0.2ms ease;
-}
-#container .present .infoMe .showInfo .listBtnInfo #btnAbout:hover, #container .present .infoMe .showInfo .listBtnInfo #btnProjets:hover, #container .present .infoMe .showInfo .listBtnInfo #btnContact:hover {
-  color: black;
-  background: azure;
-  transform: scale(1.1);
-  box-shadow: 0px 1px 9px 5px azure;
-}
-#container .present .infoMe .showInfo .about {
-  margin: auto;
-  height: 600px;
-  max-width: 1600px;
-}
-#container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-  height: 400px;
-  max-width: 600px;
-}
-#container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-  margin-top: 60px;
-}
-#container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
-  font-size: 1.6em;
-  color: azure;
-  letter-spacing: 2px;
-  font-family: emizen;
-}
-#container .present .infoMe .showInfo .about #differentMe {
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 7px;
-  border: 2px solid azure;
-}
-#container .present .infoMe .showInfo .about #differentMe .different {
-  letter-spacing: 2px;
-  text-align: center;
-  color: azure;
-  font-family: linkStart;
-}
-#container .present .infoMe .showInfo .about #differentMe .row {
-  margin-top: 25px;
-}
-#container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .fa-regular {
-  margin: auto;
-  display: block;
-  font-size: 2.8em;
-  text-align: center;
-  justify-content: center;
-  color: azure;
-}
-#container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-  margin-top: 12px;
-  font-size: 1.6em;
-  color: azure;
-  text-align: center;
-  font-family: olney;
-}
-#container .present .infoMe .showInfo .projets {
-  display: none;
-  margin-top: 30px;
-}
-#container .present .infoMe .showInfo .projets #listProjets {
-  margin: auto;
-  max-width: 1200px;
-}
-#container .present .infoMe .showInfo .projets #listProjets .col-lg-4 {
-  margin-top: -15px;
-  padding: -10px;
-}
-#container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-  opacity: 0.7;
-  height: 145px;
-  cursor: pointer;
-  max-width: 450px;
-  border-radius: 5px;
-  transition: all 0.1s ease;
-}
-#container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-#container .present .infoMe .showInfo .projets #infoProjet {
-  margin: 29px auto;
-  max-width: 1800px;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-  height: 550px;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-  margin-top: 70px;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-  font-size: 1.8em;
-  color: azure;
-  text-align: center;
-  letter-spacing: 2px;
-  font-family: linkStart;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView {
-  margin-top: 30px;
-  text-align: center;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button {
-  font-size: 1.5em;
-  color: azure;
-  background: transparent;
-  font-family: olney;
-  border: 2px solid azure;
-  transition: all 0.2s ease;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button:hover {
-  color: black;
-  background: azure;
-  transform: scale(1.1);
-  box-shadow: 0px 1px 9px 5px #FFFFFF;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button a {
-  color: azure;
-  text-decoration: none;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button a:hover {
-  color: black;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView #btnCode {
-  margin-left: 40px;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-  margin-top: 48px;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .tools {
-  font-size: 2.2em;
-  text-align: center;
-  letter-spacing: 2px;
-  color: azure;
-  font-family: emizen;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row {
-  margin-top: 18px;
-  max-width: 650px;
-  margin-left: 100px;
-}
-#container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 .fa-brands {
-  font-size: 4.8em;
-  color: azure;
-}
-#container .present .infoMe .showInfo .contact {
-  display: none;
-}
-#container .present .infoMe .showInfo .contact .card {
-  margin: -10px auto;
-  max-width: 1200px;
-  border: none;
-  background: transparent;
-}
-#container .present .infoMe .showInfo .contact .card .card-body {
-  color: black;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .reason {
-  text-align: center;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 {
-  line-height: 70px;
-  margin-top: 100px;
-  margin-right: -100px;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .home, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .phone, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .email {
-  display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  justify-content: center;
-  flex-direction: row;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .home .fa-solid, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .phone .fa-solid, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .email .fa-solid {
-  font-size: 1.6em;
-  color: azure;
-  margin-top: 23px;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .home p, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .phone p, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .email p {
-  font-size: 1.8em;
-  color: azure;
-  font-family: olney;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .listSocial {
-  text-align: center;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .listSocial .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  color: azure;
-  text-align: center;
-  text-decoration: none;
-  transition: all 0.2ms ease;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .listSocial .fa:hover {
-  transform: scale(1.1);
-  text-shadow: 0 0 5px azure, 0 0 10px azure, 2px 2px 5px rgba(206, 89, 55, 0);
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 {
-  margin-top: 35px;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 .reason {
-  color: azure;
-  letter-spacing: 2px;
-  font-family: linkStart;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form {
-  margin-top: 20px;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row {
-  top: 50%;
-  left: 10%;
-  width: 650px;
-  position: relative;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 input {
-  display: block;
-  margin: auto;
-  padding: 10px;
-  width: 270px;
-  border-radius: 5px;
-  border: 2px solid azure;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-12 textarea {
-  margin: auto;
-  display: block;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
-  top: 50%;
-  left: -3%;
-  padding: 5px;
-  position: relative;
-  margin: 13px auto;
-  display: block;
-  font-size: 1.3em;
-  border-radius: 5px;
-  color: azure;
-  font-family: olney;
-  transition: all 0.2ms ease;
-  border: 2px solid azure;
-  background-color: transparent;
-}
-#container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend:hover {
-  color: black;
-  background: azure;
-  transform: scale(1.1);
-  box-shadow: 0px 1px 9px 5px azure;
-}
-
 @font-face {
   font-family: emizen;
   src: url("/assets/fonts/emizen.otf");
-}
-@font-face {
-  font-family: fastHand;
-  src: url("/assets/fonts/fastHand.otf");
 }
 @font-face {
   font-family: linkStart;
@@ -332,675 +10,124 @@ body {
   font-family: olney;
   src: url("/assets/fonts/olney.otf");
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/bodyWallpaper.jpeg");
+}
+
+#container .navbar {
+  width: 100%;
+  margin: 40px auto;
+  max-width: 940px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid azure;
+}
+#container .navbar .container-fluid .collapse .navbar-nav {
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+#container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.5em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: emizen;
+  text-transform: uppercase;
+}
+#container #main {
+  width: 100%;
+  margin: auto;
+  height: 700px;
+  max-width: 1500px;
+}
+#container #main .row .col-lg-8 {
+  margin: 60px auto;
+}
+#container #main .row .col-lg-8 .identity {
+  font-size: 2.8em;
+  color: azure;
+  font-family: olney;
+}
+#container #main .row .col-lg-8 .developper {
+  font-size: 3.8em;
+  letter-spacing: 2px;
+  color: azure;
+  font-family: linkStart;
+}
+#container #main .row .col-lg-8 .search {
+  margin-top: -5px;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  color: azure;
+  font-family: olney;
+}
+#container #main .row .col-lg-8 .listBtnHref {
+  margin-top: 30px;
+  text-align: center;
+}
+#container #main .row .col-lg-8 .listBtnHref a {
+  text-decoration: none;
+}
+#container #main .row .col-lg-8 .listBtnHref a .fa-download, #container #main .row .col-lg-8 .listBtnHref a .fa-linkedin-in, #container #main .row .col-lg-8 .listBtnHref a .fa-github {
+  font-size: 2.8em;
+  margin-right: 120px;
+  color: azure;
+  transition: all 0.2ms ease;
+}
+#container #main .row .col-lg-8 .listBtnHref a .fa-download:hover, #container #main .row .col-lg-8 .listBtnHref a .fa-linkedin-in:hover, #container #main .row .col-lg-8 .listBtnHref a .fa-github:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 5px azure, 0 0 10px azure, 2px 2px 5px rgba(206, 89, 55, 0);
+}
+#container #main .row .col-lg-4 .img-fluid {
+  height: 600px;
+}
+#container .about {
+  display: none;
+}
+#container #projets {
+  display: none;
+  margin: 30px auto;
+}
+#container #projets #listProjets {
+  margin: auto;
+  max-width: 1200px;
+}
+#container #projets #listProjets .col-lg-4 .img-fluid {
+  padding: -15px;
+  height: 150px;
+  max-width: 450px;
+}
+#container #projets #infoProjet {
+  padding: 25px;
+  margin-top: 20px;
+}
+#container #projets #infoProjet .col-lg-7 #projetImage {
+  height: 550px;
+}
+
 @media screen and (max-width: 1440px) {
-  #container .present .infoMe .identify {
-    padding-top: 390px;
+  #container .navbar {
+    margin: 80px auto;
   }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-    height: 450px;
-    max-width: 450px;
+  #container #main .row .col-lg-8 {
+    padding-left: 120px;
+    margin: 120px auto;
   }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-    margin-left: -40px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe {
-    padding: 5px;
-    width: 100%;
-    display: block;
-    margin: 18px auto;
-    max-width: 1200px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .different {
-    font-size: 2.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-    font-size: 1.4em;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-    height: 165px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-    height: 625px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-    margin-top: 80px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-    font-size: 1.9em;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-    margin-top: 38px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetFirstTool {
-    height: 200px;
-    max-width: 250px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetSecondTool {
-    height: 290px;
-    margin-top: -40px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetThirdTool {
-    height: 230px;
-  }
-}
-@media screen and (max-width: 1225px) {
-  #container .present .infoMe .identify {
-    padding-top: 390px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-    height: 430px;
-    max-width: 450px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-    margin-left: -40px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
-    font-size: 1.4em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe {
-    padding: 5px;
-    width: 100%;
-    height: 240px;
-    display: block;
-    margin: 18px auto;
-    max-width: 1150px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .different {
-    font-size: 1.9em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-    font-size: 1.1em;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-    height: 125px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-    height: 525px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-    margin-top: 80px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-    font-size: 1.9em;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-    margin-top: 38px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetFirstTool {
-    height: 100px;
-    max-width: 250px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetSecondTool {
-    height: 150px;
-    margin-top: -25px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #projetThirdTool {
-    height: 110px;
-  }
-  #container .present .infoMe .showInfo .contact .card {
-    margin-left: 120px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
-    left: 5%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  #container .present .infoMe .identify {
-    padding-top: 340px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-    height: 370px;
-    max-width: 400px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-    margin-left: -20px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
-    font-size: 1.2em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe {
-    padding: 5px;
-    width: 100%;
-    height: 270px;
-    display: block;
-    margin: 18px auto;
-    max-width: 950px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .different {
-    font-size: 1.9em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-    font-size: 1.1em;
-  }
-  #container .present .infoMe .showInfo .projets {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-    height: 105px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-    height: 525px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-    margin-top: 80px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-    font-size: 1.9em;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-    margin-top: 38px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row {
-    margin-left: 10px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 .fa-brands {
-    font-size: 4.4em;
-  }
-  #container .present .infoMe .showInfo .contact .card {
-    margin-left: 60px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 {
-    margin-right: -70px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
-    left: 10%;
-  }
-}
-@media screen and (max-width: 991px) {
-  #container {
-    height: 170vh;
-  }
-  #container .present .infoMe .identify {
-    padding-top: 390px;
-  }
-  #container .present .infoMe .showInfo .about {
-    max-width: 800px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-    height: 400px;
-    max-width: 450px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-    margin-left: -10px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
-    font-size: 1.2em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe {
-    padding: 5px;
-    width: 100%;
-    height: 460px;
-    display: block;
-    margin: 18px auto;
-    max-width: 950px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .different {
-    font-size: 2.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-    font-size: 1.2em;
-  }
-  #container .present .infoMe .showInfo .projets {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-    height: 125px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-    margin: auto;
-    display: block;
-    text-align: center;
-    height: 505px;
-    max-width: 650px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-    height: 40px;
-    font-size: 1.9em;
-    overflow: auto;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-    margin-top: 38px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row {
-    margin-left: 215px;
-  }
-  #container .present .infoMe .showInfo .contact .card {
-    margin: -80px auto;
-    margin-left: 60px;
-    max-width: 850px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 {
-    margin-right: -70px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 input {
-    width: 470px;
-    margin: 10px auto;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-12 textarea {
-    margin-left: 40px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
-    left: 0%;
-  }
-}
-@media screen and (max-width: 768px) {
-  #container {
-    height: 170vh;
-  }
-  #container .present .infoMe .identify {
-    padding-top: 390px;
-  }
-  #container .present .infoMe .showInfo .about {
-    max-width: 800px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-    height: 400px;
-    max-width: 450px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-    max-width: 750px;
-    margin-left: 20px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
-    font-size: 1.2em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe {
-    padding: 5px;
-    width: 100%;
-    height: 460px;
-    display: block;
-    margin: 18px auto;
-    max-width: 750px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .different {
-    font-size: 2.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-    font-size: 1.2em;
-  }
-  #container .present .infoMe .showInfo .projets {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-    height: 135px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-    margin: auto;
-    display: block;
-    text-align: center;
-    height: 505px;
-    max-width: 650px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-    height: 40px;
-    font-size: 1.9em;
-    overflow: auto;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-    margin-top: 38px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row {
-    margin-left: 105px;
-  }
-  #container .present .infoMe .showInfo .contact .card {
-    margin: -80px auto;
-    margin-left: 20px;
-    max-width: 850px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 {
-    margin-left: -20px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 input {
-    width: 490px;
-    margin: 10px auto;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-12 textarea {
-    margin-left: 20px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
-    left: 0%;
-  }
-}
-@media screen and (max-width: 425px) {
-  #container {
-    height: 220vh;
-  }
-  #container .present .infoMe .identify {
-    padding-top: 270px;
-  }
-  #container .present .infoMe .showInfo .listBtnInfo #btnAbout, #container .present .infoMe .showInfo .listBtnInfo #btnProjets, #container .present .infoMe .showInfo .listBtnInfo #btnContact {
-    font-size: 1.4em;
-    margin: 10px;
-  }
-  #container .present .infoMe .showInfo .about {
-    max-width: 800px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-    height: 400px;
-    max-width: 400px;
-    margin-right: -60px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-    margin-top: 20px;
-    max-width: 420px;
-    margin-left: 20px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
-    font-size: 1.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe {
-    padding: 5px;
-    width: 100%;
-    height: 760px;
-    display: block;
-    margin: 18px auto;
-    max-width: 320px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .different {
-    font-size: 2.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-    font-size: 1.2em;
-  }
-  #container .present .infoMe .showInfo .projets {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-    height: 155px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-    margin: auto;
-    display: block;
-    text-align: center;
-    height: 545px;
-    max-width: 650px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-    height: 40px;
-    font-size: 1.9em;
-    overflow: auto;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-    margin-top: 38px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row {
-    margin-top: -28px;
-    max-width: 250px;
-    margin-left: 135px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 .fa-brands {
-    margin-top: 40px;
-    font-size: 5.8em;
-  }
-  #container .present .infoMe .showInfo .contact .card {
-    margin: -80px auto;
-    margin-left: 40px;
-    max-width: 350px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 {
-    margin-left: -180px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 input {
-    width: 270px;
-    margin: 10px auto;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-12 textarea {
-    width: 250px;
-    margin-left: 6px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
-    left: 0%;
-  }
-}
-@media screen and (max-width: 375px) {
-  #container {
-    height: 250vh;
-  }
-  #container .present .infoMe .identify {
-    padding-top: 290px;
-  }
-  #container .present .infoMe .identify .name {
-    font-size: 3em;
-  }
-  #container .present .infoMe .identify .jobs {
-    font-size: 2.8em;
-  }
-  #container .present .infoMe .showInfo .listBtnInfo #btnAbout, #container .present .infoMe .showInfo .listBtnInfo #btnProjets, #container .present .infoMe .showInfo .listBtnInfo #btnContact {
-    font-size: 1.4em;
-    margin: 10px;
-  }
-  #container .present .infoMe .showInfo .about {
-    max-width: 300px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-    height: 400px;
-    max-width: 400px;
-    margin-right: -60px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-    margin-top: 20px;
-    max-width: 420px;
-    margin-left: 0px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
-    font-size: 1.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe {
-    padding: 5px;
-    width: 100%;
-    height: 830px;
-    display: block;
-    margin: 18px auto;
-    max-width: 320px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .different {
-    font-size: 2.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-    font-size: 1.2em;
-  }
-  #container .present .infoMe .showInfo .projets {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-    height: 155px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-    margin: auto;
-    display: block;
-    text-align: center;
-    height: 545px;
-    max-width: 650px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-    height: 40px;
-    font-size: 1.9em;
-    overflow: auto;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-    margin-top: 38px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row {
-    margin-top: -28px;
-    max-width: 250px;
-    margin-left: 115px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 .fa-brands {
-    margin-top: 40px;
-    font-size: 5.8em;
-  }
-  #container .present .infoMe .showInfo .contact .card {
-    margin: -80px auto;
-    margin-left: 10px;
-    max-width: 350px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 {
-    margin-left: -180px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 input {
-    width: 270px;
-    margin: 10px auto;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-12 textarea {
-    width: 250px;
-    margin-left: 6px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
-    left: 0%;
-  }
-}
-@media screen and (max-width: 320px) {
-  #container {
-    height: 250vh;
-  }
-  #container .present .infoMe .identify {
-    padding-top: 290px;
-  }
-  #container .present .infoMe .identify .name {
-    font-size: 3em;
-  }
-  #container .present .infoMe .identify .jobs {
-    font-size: 2.8em;
-  }
-  #container .present .infoMe .showInfo .listBtnInfo #btnAbout, #container .present .infoMe .showInfo .listBtnInfo #btnProjets, #container .present .infoMe .showInfo .listBtnInfo #btnContact {
-    font-size: 1.4em;
-    margin: 10px;
-  }
-  #container .present .infoMe .showInfo .about {
-    max-width: 300px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-4 .img-fluid {
-    height: 400px;
-    max-width: 400px;
-    margin-right: -60px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 {
-    margin-top: 20px;
-    max-width: 420px;
-    margin-left: 0px;
-  }
-  #container .present .infoMe .showInfo .about #infoMe .col-lg-8 p {
-    font-size: 1.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe {
-    padding: 5px;
-    width: 100%;
-    height: 830px;
-    display: block;
-    margin: 18px auto;
-    max-width: 320px;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .different {
-    font-size: 2.1em;
-  }
-  #container .present .infoMe .showInfo .about #differentMe .row .col-lg-4 .describe {
-    font-size: 1.2em;
-  }
-  #container .present .infoMe .showInfo .projets {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 {
-    text-align: center;
-  }
-  #container .present .infoMe .showInfo .projets #listProjets .col-lg-4 .img-fluid {
-    height: 155px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-7 #projetImage {
-    margin: auto;
-    display: block;
-    text-align: center;
-    height: 545px;
-    max-width: 650px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 {
-    margin-top: 40px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .pitch {
-    height: 140px;
-    font-size: 1.9em;
-    overflow: auto;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView button {
-    display: block;
-    margin: 10px auto;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 .listBtnView #btnCode {
-    margin-left: 60px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks {
-    margin-top: 38px;
-  }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .tools {
+  #container #main .row .col-lg-8 .identity {
     font-size: 2em;
   }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row {
-    margin-top: -28px;
-    max-width: 250px;
-    margin-left: 95px;
+  #container #main .row .col-lg-8 .developper {
+    font-size: 2.8em;
   }
-  #container .present .infoMe .showInfo .projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 .fa-brands {
-    margin-top: 40px;
-    font-size: 5.8em;
-  }
-  #container .present .infoMe .showInfo .contact .card {
-    margin: -80px auto;
-    margin-left: 10px;
-    max-width: 290px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .home p, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .phone p, #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-4 .email p {
-    font-size: 1.4em;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 {
-    margin-left: -210px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-6 input {
-    width: 270px;
-    margin: 10px auto;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form .row .col-lg-12 textarea {
-    width: 250px;
-    margin-left: -22px;
-  }
-  #container .present .infoMe .showInfo .contact .card .card-body .row .col-lg-8 form #btnSend {
-    left: 0%;
+  #container #main .row .col-lg-8 .search {
+    font-size: 2em;
   }
 }/*# sourceMappingURL=style.css.map */
