@@ -74,7 +74,7 @@ const myProjets = [
     id: 3,
     pict: "/assets/picts/tlouSite.png",
     picth: "Ce projet est ma première single page application basée sur l'une des sagas de jeux vidéo les plus appréciées de tous les joueurs et joueuses. C'est ma lettre d'amour pour ces jeux que je l'ai créée avec plaisir.",
-    web: "https://the-last-of-us-orcin.vercel.app/main",
+    web: "https://the-last-of-us-ndgo.vercel.app",
     source: "https://github.com/Matfen2/The-Last-Of-Us",
   }
 ];
