@@ -1,36 +1,54 @@
-const btnMain = document.getElementById('btnMain');
+const btnMain = document.getElementById('btnMain'); 
 const btnAbout = document.getElementById('btnAbout');
 const btnProjets = document.getElementById('btnProjets');
 const btnContact = document.getElementById('btnContact');
 
-const main = document.getElementById('main');
+const btnAboutCanvas = document.getElementById('btnAboutCanvas');
+const btnProjetsCanvas = document.getElementById('btnProjetsCanvas');
+const btnContactCanvas = document.getElementById('btnContactCanvas');
+
+const main = document.querySelector('.main');
+const info = document.getElementById('page');
 const about = document.getElementById('about');
 const projets = document.getElementById('projets');
 const contact = document.getElementById('contact');
 
 btnMain.addEventListener('click', function () {
-  main.style.display = "block";
-  about.style.display = "none";
+  main.style.display = "none";
+  info.style.display = "block";
+})
+
+btnAbout.addEventListener('click', function () {
+  about.style.display = "block";
   projets.style.display = "none";
   contact.style.display = "none";
 })
 
-btnAbout.addEventListener('click', function () {
-  main.style.display = "none";
+btnAboutCanvas.addEventListener('click', function () {
   about.style.display = "block";
   projets.style.display = "none";
   contact.style.display = "none";
 })
 
 btnProjets.addEventListener('click', function () {
-  main.style.display = "none";
+  about.style.display = "none";
+  projets.style.display = "block";
+  contact.style.display = "none";
+})
+
+btnProjetsCanvas.addEventListener('click', function () {
   about.style.display = "none";
   projets.style.display = "block";
   contact.style.display = "none";
 })
 
 btnContact.addEventListener('click', function () {
-  main.style.display = "none";
+  about.style.display = "none";
+  projets.style.display = "none";
+  contact.style.display = "block";
+})
+
+btnContactCanvas.addEventListener('click', function () {
   about.style.display = "none";
   projets.style.display = "none";
   contact.style.display = "block";
@@ -55,7 +73,7 @@ const myProjets = [
   {
     id: 3,
     pict: "/assets/picts/tlouSite.png",
-    picth: "Un site basé sur l'univers de l'une de mes sagas de jeu vidéo préférée.",
+    picth: "Ce projet est ma première single page application basée sur l'une des sagas de jeux vidéo les plus appréciées de tous les joueurs et joueuses. C'est ma lettre d'amour pour ces jeux que je l'ai créée avec plaisir.",
     web: "https://the-last-of-us-orcin.vercel.app/main",
     source: "https://github.com/Matfen2/The-Last-Of-Us",
   }
@@ -80,4 +98,32 @@ function afficherProjet(projet) {
   document.getElementById('projetPitch').textContent = projet.picth;
   document.getElementById('projetWebLink').href = projet.web;
   document.getElementById('projetSourceLink').href = projet.source;
+}
+
+// CONTACT
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  const userValue = user.value;
+  const emailValue = email.value;
+  const messageValue = message.value;
+
+  if (!userValue || !emailValue || !messageValue) {
+    alert("Veuillez remplir tous les champs.");
+    return;
+  }
+
+  if (!isValidEmail(emailValue)) {
+    alert("Veuillez saisir une adresse email valide.");
+    return;
+  }
+
+  alert(userValue + ', votre message a été envoyé avec succès.');
+});
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 }

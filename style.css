@@ -23,111 +23,901 @@ body {
   background-image: url("/assets/picts/bodyWallpaper.jpeg");
 }
 
-#container .navbar {
+#container .main {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#container .main .identify {
+  text-align: center;
+}
+#container .main .identify .name {
+  font-size: 3.8em;
+  letter-spacing: 2px;
+  color: azure;
+  font-family: emizen;
+}
+#container .main .identify .jobs {
+  margin-top: -16px;
+  letter-spacing: 2px;
+  font-size: 3em;
+  color: azure;
+  font-family: olney;
+}
+#container .main .identify #btnMain {
+  margin-top: -15px;
+  padding: 2px 9px 2px 9px;
+  font-size: 1.8em;
+  border-radius: 6px;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: linkStart;
+  background: transparent;
+  transition: all 0.2s ease;
+  border: 2px solid azure;
+}
+#container .main .identify #btnMain:hover {
+  color: black;
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px azure;
+}
+#container #page {
+  display: none;
+}
+#container #page #btnBar {
+  top: 2%;
+  right: 3%;
+  display: none;
+  cursor: pointer;
+  font-size: 1.7em;
+  color: azure;
+  position: absolute;
+  border: transparent;
+  background: transparent;
+}
+#container #page .navbar {
+  top: 2%;
+  left: 50%;
   width: 100%;
-  margin: 40px auto;
-  max-width: 940px;
+  position: relative;
+  max-width: 740px;
   border-radius: 20px;
+  transform: translate(-50%, 60%);
   background: transparent;
   border: 2px solid azure;
 }
-#container .navbar .container-fluid .collapse .navbar-nav {
+#container #page .navbar .container-fluid .collapse .navbar-nav {
   -moz-column-gap: 80px;
        column-gap: 80px;
 }
-#container .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+#container #page .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
   font-size: 1.5em;
   color: azure;
   letter-spacing: 2px;
   font-family: emizen;
   text-transform: uppercase;
 }
-#container #main {
+#container #page #about {
   width: 100%;
-  margin: auto;
+  margin: 100px auto;
   height: 700px;
-  max-width: 1500px;
+  max-width: 1600px;
 }
-#container #main .row .col-lg-8 {
+#container #page #about .row .col-lg-5 {
   margin: 60px auto;
 }
-#container #main .row .col-lg-8 .identity {
+#container #page #about .row .col-lg-5 .identity {
   font-size: 2.8em;
   color: azure;
   font-family: olney;
 }
-#container #main .row .col-lg-8 .developper {
-  font-size: 3.8em;
+#container #page #about .row .col-lg-5 .developper {
+  font-size: 3em;
   letter-spacing: 2px;
   color: azure;
   font-family: linkStart;
 }
-#container #main .row .col-lg-8 .search {
+#container #page #about .row .col-lg-5 .search {
   margin-top: -5px;
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: 2px;
   color: azure;
   font-family: olney;
 }
-#container #main .row .col-lg-8 .listBtnHref {
+#container #page #about .row .col-lg-5 .listBtnHref {
   margin-top: 30px;
   text-align: center;
 }
-#container #main .row .col-lg-8 .listBtnHref a {
+#container #page #about .row .col-lg-5 .listBtnHref a {
   text-decoration: none;
 }
-#container #main .row .col-lg-8 .listBtnHref a .fa-download, #container #main .row .col-lg-8 .listBtnHref a .fa-linkedin-in, #container #main .row .col-lg-8 .listBtnHref a .fa-github {
+#container #page #about .row .col-lg-5 .listBtnHref a .fa-download, #container #page #about .row .col-lg-5 .listBtnHref a .fa-linkedin-in, #container #page #about .row .col-lg-5 .listBtnHref a .fa-github {
   font-size: 2.8em;
   margin-right: 120px;
   color: azure;
   transition: all 0.2ms ease;
 }
-#container #main .row .col-lg-8 .listBtnHref a .fa-download:hover, #container #main .row .col-lg-8 .listBtnHref a .fa-linkedin-in:hover, #container #main .row .col-lg-8 .listBtnHref a .fa-github:hover {
+#container #page #about .row .col-lg-5 .listBtnHref a .fa-download:hover, #container #page #about .row .col-lg-5 .listBtnHref a .fa-linkedin-in:hover, #container #page #about .row .col-lg-5 .listBtnHref a .fa-github:hover {
   transform: scale(1.1);
   text-shadow: 0 0 5px azure, 0 0 10px azure, 2px 2px 5px rgba(206, 89, 55, 0);
 }
-#container #main .row .col-lg-4 .img-fluid {
+#container #page #about .row .col-lg-7 .img-fluid {
   height: 600px;
+  border-radius: 5px;
 }
-#container .about {
+#container #page #projets {
   display: none;
+  margin: 80px auto;
 }
-#container #projets {
-  display: none;
-  margin: 30px auto;
-}
-#container #projets #listProjets {
+#container #page #projets #listProjets {
   margin: auto;
   max-width: 1200px;
 }
-#container #projets #listProjets .col-lg-4 .img-fluid {
+#container #page #projets #listProjets .col-lg-4 .img-fluid {
   padding: -15px;
-  height: 150px;
+  height: 120px;
+  cursor: pointer;
   max-width: 450px;
+  opacity: 0.7;
+  transition: all 0.2s ease;
 }
-#container #projets #infoProjet {
+#container #page #projets #listProjets .col-lg-4 .img-fluid:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#container #page #projets #infoProjet {
   padding: 25px;
   margin-top: 20px;
 }
-#container #projets #infoProjet .col-lg-7 #projetImage {
+#container #page #projets #infoProjet .col-lg-7 #projetImage {
   height: 550px;
+}
+#container #page #projets #infoProjet .col-lg-5 {
+  margin-top: 30px;
+}
+#container #page #projets #infoProjet .col-lg-5 .pitch {
+  font-size: 1.9em;
+  color: azure;
+  font-family: linkStart;
+}
+#container #page #projets #infoProjet .col-lg-5 .listBtnView {
+  margin-top: 30px;
+  text-align: center;
+}
+#container #page #projets #infoProjet .col-lg-5 .listBtnView button {
+  font-size: 1.5em;
+  color: azure;
+  margin: 0px 15px 0px 15px;
+  background: transparent;
+  font-family: olney;
+  border: 2px solid azure;
+  transition: all 0.2s ease;
+}
+#container #page #projets #infoProjet .col-lg-5 .listBtnView button:hover {
+  color: black;
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px azure;
+}
+#container #page #projets #infoProjet .col-lg-5 .listBtnView button a {
+  color: azure;
+  text-decoration: none;
+}
+#container #page #projets #infoProjet .col-lg-5 .listBtnView button a:hover {
+  color: black;
+}
+#container #page #projets #infoProjet .col-lg-5 #projetFrameworks {
+  margin-top: 28px;
+}
+#container #page #projets #infoProjet .col-lg-5 #projetFrameworks .tools {
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 2px;
+  color: azure;
+  font-family: emizen;
+}
+#container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row {
+  text-align: center;
+  margin-top: 28px;
+}
+#container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #html {
+  height: 120px;
+  max-width: 120px;
+}
+#container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #css {
+  height: 120px;
+  max-width: 100px;
+}
+#container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #js {
+  height: 110px;
+  margin-top: 10px;
+  max-width: 100px;
+}
+#container #page #contact {
+  display: none;
+  margin: 90px auto;
+  text-align: center;
+}
+#container #page #contact .listInfoContact {
+  display: flex;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  margin: 30px auto;
+  justify-content: center;
+  flex-direction: row;
+}
+#container #page #contact .listInfoContact .phone .fa-solid, #container #page #contact .listInfoContact .email .fa-solid {
+  font-size: 1.9em;
+  color: azure;
+}
+#container #page #contact .listInfoContact .phone p, #container #page #contact .listInfoContact .email p {
+  margin-top: 10px;
+  font-size: 1.6em;
+  color: azure;
+  font-family: olney;
+}
+#container #page #contact form {
+  display: flex;
+  margin-top: -30px;
+  flex-direction: column;
+}
+#container #page #contact form #user, #container #page #contact form #email, #container #page #contact form #message {
+  width: 35%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+#container #page #contact form #btnSend {
+  padding: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 4px auto;
+  border-radius: 5px;
+  color: azure;
+  font-family: olney;
+  background: transparent;
+  transition: all 0.2s ease;
+  border: 2px solid azure;
+}
+#container #page #contact form #btnSend:hover {
+  color: black;
+  background: azure;
+  transform: scale(1.1);
+  box-shadow: 0px 1px 9px 5px azure;
+}
+#container #showCanvas {
+  width: 100%;
+  height: 210px;
+  max-width: 300px;
+  border-radius: 0px 0px 0px 10px;
+  border: 2px solid azure;
+  background-color: black;
+}
+#container #showCanvas .btn-close {
+  top: -5%;
+  left: -1%;
+  position: relative;
+  font-size: 2em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+#container #showCanvas .offcanvas-body {
+  margin-top: -30px;
+  text-align: center;
+}
+#container #showCanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+  font-size: 1.5em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: emizen;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1440px) {
-  #container .navbar {
+  #container .main .identify .name {
+    font-size: 4em;
+  }
+  #container .main .identify .jobs {
+    width: 1000px;
+    font-size: 3.6em;
+  }
+  #container .main .identify #btnMain {
+    font-size: 2.5em;
+  }
+  #container #page .navbar {
+    max-width: 860px;
+  }
+  #container #page .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 1.8em;
+  }
+  #container #page #about {
+    margin: 120px auto;
+    max-width: 1400px;
+  }
+  #container #page #projets {
     margin: 80px auto;
   }
-  #container #main .row .col-lg-8 {
-    padding-left: 120px;
-    margin: 120px auto;
+  #container #page #projets #listProjets {
+    margin: 20px auto;
   }
-  #container #main .row .col-lg-8 .identity {
-    font-size: 2em;
+  #container #page #projets #listProjets .col-lg-4 .img-fluid {
+    height: 180px;
   }
-  #container #main .row .col-lg-8 .developper {
+  #container #page #projets #infoProjet {
+    margin: 20px auto;
+    max-width: 1400px;
+  }
+  #container #page #projets #infoProjet .col-lg-7 #projetImage {
+    height: 570px;
+  }
+  #container #page #contact {
+    margin: 90px auto;
+  }
+  #container #page #contact .listInfoContact .phone .fa-solid, #container #page #contact .listInfoContact .email .fa-solid {
     font-size: 2.8em;
   }
-  #container #main .row .col-lg-8 .search {
+  #container #page #contact .listInfoContact .phone p, #container #page #contact .listInfoContact .email p {
+    font-size: 1.9em;
+  }
+  #container #page #contact form #user, #container #page #contact form #email, #container #page #contact form #message {
+    width: 45%;
+    margin: 15px auto;
+  }
+  #container #page #contact form #btnSend {
+    font-size: 1.4em;
+  }
+  #container #showCanvas {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #container .main .identify .name {
+    font-size: 3.7em;
+  }
+  #container .main .identify .jobs {
+    width: 1000px;
+    font-size: 3.2em;
+  }
+  #container .main .identify #btnMain {
+    font-size: 2.2em;
+  }
+  #container #page .navbar {
+    max-width: 750px;
+  }
+  #container #page .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    font-size: 1.1em;
+  }
+  #container #page #about {
+    margin: 90px auto;
+    max-width: 920px;
+  }
+  #container #page #about .row .col-lg-5 .identity {
     font-size: 2em;
+  }
+  #container #page #about .row .col-lg-5 .developper {
+    font-size: 1.8em;
+  }
+  #container #page #about .row .col-lg-5 .search {
+    font-size: 1.8em;
+  }
+  #container #page #about .row .col-lg-5 .listBtnHref {
+    display: flex;
+    margin-left: 80px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #container #page #about .row .col-lg-5 .listBtnHref a .fa-download, #container #page #about .row .col-lg-5 .listBtnHref a .fa-linkedin-in, #container #page #about .row .col-lg-5 .listBtnHref a .fa-github {
+    font-size: 2em;
+    margin-right: 100px;
+  }
+  #container #page #about .row .col-lg-7 .img-fluid {
+    height: 650px;
+  }
+  #container #page #projets {
+    margin: 80px auto;
+  }
+  #container #page #projets #listProjets {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  #container #page #projets #listProjets .col-lg-4 .img-fluid {
+    height: 120px;
+  }
+  #container #page #projets #infoProjet {
+    margin: 20px auto;
+    max-width: 980px;
+  }
+  #container #page #projets #infoProjet .col-lg-7 #projetImage {
+    height: 500px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .pitch {
+    height: 90px;
+    overflow: auto;
+    text-align: center;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView #btnWeb {
+    margin-bottom: 5px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView #btnCode {
+    margin-top: 10px;
+  }
+  #container #page #contact {
+    margin: 90px auto;
+  }
+  #container #page #contact .listInfoContact .phone .fa-solid, #container #page #contact .listInfoContact .email .fa-solid {
+    font-size: 2.8em;
+  }
+  #container #page #contact .listInfoContact .phone p, #container #page #contact .listInfoContact .email p {
+    font-size: 1.9em;
+  }
+  #container #page #contact form #message {
+    height: 290px;
+  }
+  #container #page #contact form #btnSend {
+    font-size: 1.4em;
+  }
+  #container #showCanvas {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  #container .main .identify .name {
+    font-size: 3.7em;
+  }
+  #container .main .identify .jobs {
+    width: 760px;
+    font-size: 3.2em;
+  }
+  #container .main .identify #btnMain {
+    font-size: 2em;
+  }
+  #container #page #btnBar {
+    display: block;
+  }
+  #container #page .navbar {
+    display: none;
+  }
+  #container #page #about {
+    margin: 60px auto;
+    max-width: 800px;
+  }
+  #container #page #about .row .col-lg-5 {
+    text-align: center;
+  }
+  #container #page #about .row .col-lg-5 .identity {
+    font-size: 2.6em;
+  }
+  #container #page #about .row .col-lg-5 .developper {
+    font-size: 2.4em;
+  }
+  #container #page #about .row .col-lg-5 .search {
+    font-size: 1.6em;
+  }
+  #container #page #about .row .col-lg-5 .listBtnHref {
+    top: 0%;
+    left: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    transform: translate(-53%, 10%);
+  }
+  #container #page #about .row .col-lg-7 {
+    margin-top: -20px;
+  }
+  #container #page #about .row .col-lg-7 .img-fluid {
+    height: 420px;
+  }
+  #container #page #projets {
+    margin: 80px auto;
+  }
+  #container #page #projets #listProjets {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  #container #page #projets #listProjets .col-lg-4 .img-fluid {
+    height: 100px;
+  }
+  #container #page #projets #infoProjet {
+    margin: 20px auto;
+    max-width: 880px;
+  }
+  #container #page #projets #infoProjet .col-lg-7 #projetImage {
+    height: 340px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .pitch {
+    height: 90px;
+    overflow: auto;
+    text-align: center;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView {
+    margin-top: -10px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView #btnWeb {
+    margin-bottom: 5px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView #btnCode {
+    margin-top: 10px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    flex-direction: row;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .tools {
+    font-size: 1.7em;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row {
+    margin-top: -60px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 .img-fluid {
+    height: 60px;
+    margin: 0px 20px 0px 20px;
+  }
+  #container #page #contact {
+    margin: 140px auto;
+  }
+  #container #page #contact .listInfoContact .phone .fa-solid, #container #page #contact .listInfoContact .email .fa-solid {
+    font-size: 2.8em;
+  }
+  #container #page #contact .listInfoContact .phone p, #container #page #contact .listInfoContact .email p {
+    font-size: 1.9em;
+  }
+  #container #page #contact form #message {
+    height: 290px;
+  }
+  #container #page #contact form #btnSend {
+    font-size: 1.4em;
+  }
+  #container #showCanvas {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container .main .identify .name {
+    font-size: 3.2em;
+  }
+  #container .main .identify .jobs {
+    width: 560px;
+    font-size: 2.9em;
+  }
+  #container .main .identify #btnMain {
+    font-size: 1.7em;
+  }
+  #container #page #btnBar {
+    display: block;
+  }
+  #container #page .navbar {
+    display: none;
+  }
+  #container #page #about {
+    margin: 40px auto;
+    max-width: 620px;
+  }
+  #container #page #about .row .col-lg-5 {
+    text-align: center;
+  }
+  #container #page #about .row .col-lg-5 .identity {
+    font-size: 2.6em;
+  }
+  #container #page #about .row .col-lg-5 .developper {
+    font-size: 2.4em;
+  }
+  #container #page #about .row .col-lg-5 .search {
+    font-size: 1.6em;
+  }
+  #container #page #about .row .col-lg-5 .listBtnHref {
+    top: 0%;
+    left: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    transform: translate(-55%, 10%);
+  }
+  #container #page #about .row .col-lg-7 .img-fluid {
+    height: 360px;
+  }
+  #container #page #projets {
+    margin: 80px auto;
+  }
+  #container #page #projets #listProjets {
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+  #container #page #projets #infoProjet #projetFrameworks {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    flex-direction: row;
+  }
+  #container #page #projets #infoProjet #projetFrameworks .tools {
+    font-size: 1.4em;
+  }
+  #container #page #contact {
+    margin: 80px auto;
+  }
+  #container #page #contact .listInfoContact {
+    display: flex;
+    flex-direction: column;
+  }
+  #container #page #contact .listInfoContact .phone .fa-solid, #container #page #contact .listInfoContact .email .fa-solid {
+    font-size: 2.2em;
+  }
+  #container #page #contact .listInfoContact .phone p, #container #page #contact .listInfoContact .email p {
+    font-size: 1.6em;
+  }
+  #showCanvas {
+    display: block;
+  }
+}
+@media screen and (max-width: 560px) {
+  #container .main .identify .name {
+    font-size: 3.2em;
+  }
+  #container .main .identify .jobs {
+    width: 420px;
+    font-size: 2.9em;
+  }
+  #container .main .identify #btnMain {
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 425px) {
+  #container .main .identify .name {
+    font-size: 2.6em;
+  }
+  #container .main .identify .jobs {
+    width: 350px;
+    font-size: 2.2em;
+  }
+  #container .main .identify #btnMain {
+    font-size: 1.4em;
+  }
+  #container #page #btnBar {
+    display: block;
+  }
+  #container #page .navbar {
+    display: none;
+  }
+  #container #page #about {
+    margin: 40px auto;
+    max-width: 320px;
+  }
+  #container #page #about .row .col-lg-5 {
+    text-align: center;
+  }
+  #container #page #about .row .col-lg-5 .identity {
+    font-size: 2.2em;
+  }
+  #container #page #about .row .col-lg-5 .developper {
+    font-size: 2em;
+  }
+  #container #page #about .row .col-lg-5 .search {
+    font-size: 1em;
+  }
+  #container #page #about .row .col-lg-5 .listBtnHref {
+    top: 0%;
+    left: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    transform: translate(-76%, 10%);
+  }
+  #container #page #about .row .col-lg-5 .listBtnHref a .fa-download, #container #page #about .row .col-lg-5 .listBtnHref a .fa-linkedin-in, #container #page #about .row .col-lg-5 .listBtnHref a .fa-github {
+    font-size: 2.2em;
+    margin-right: 50px;
+  }
+  #container #page #about .row .col-lg-7 .img-fluid {
+    height: 360px;
+  }
+  #container #page #projets {
+    margin: 80px auto;
+  }
+  #container #page #projets #listProjets {
+    height: 100px;
+    display: flex;
+    overflow: auto;
+    flex-direction: row;
+    max-width: 350px;
+    margin: 20px auto;
+  }
+  #container #page #projets #listProjets .col-lg-4 .img-fluid {
+    height: 100px;
+  }
+  #container #page #projets #infoProjet .col-lg-7 #projetImage {
+    height: 300px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView {
+    display: flex;
+    align-items: center;
+    margin-left: 42px;
+    flex-direction: row;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView button {
+    font-size: 1.1em;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .tools {
+    font-size: 1.8em;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row {
+    height: 120px;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #css {
+    margin-top: 20px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #js {
+    margin-top: 20px;
+  }
+  #container #page #contact form #user, #container #page #contact form #email, #container #page #contact form #message {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 375px) {
+  #container .main .identify .name {
+    font-size: 2.6em;
+  }
+  #container .main .identify .jobs {
+    width: 280px;
+    font-size: 2em;
+  }
+  #container .main .identify #btnMain {
+    font-size: 1.4em;
+  }
+  #container #page #btnBar {
+    right: 5%;
+  }
+  #container #page #about {
+    margin: 30px auto;
+    max-width: 320px;
+  }
+  #container #page #about .row .col-lg-7 .img-fluid {
+    height: 390px;
+  }
+  #container #page #projets {
+    margin: 80px auto;
+  }
+  #container #page #projets #listProjets {
+    height: 100px;
+    display: flex;
+    overflow: auto;
+    flex-direction: row;
+    max-width: 300px;
+    margin: 20px auto;
+    margin-right: 45px;
+  }
+  #container #page #projets #listProjets .col-lg-4 .img-fluid {
+    height: 100px;
+  }
+  #container #page #projets #infoProjet .col-lg-7 #projetImage {
+    height: 280px;
+    margin-top: -10px;
+    margin-left: -8px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .pitch {
+    margin-right: 20px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    flex-direction: row;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView button {
+    font-size: 0.9em;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .tools {
+    font-size: 1.8em;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row {
+    height: 120px;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #css {
+    margin-top: 20px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #js {
+    margin-top: 20px;
+  }
+  #container #page #contact form #user, #container #page #contact form #email, #container #page #contact form #message {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #container .main .identify .name {
+    font-size: 2.6em;
+  }
+  #container .main .identify .jobs {
+    width: 280px;
+    font-size: 2em;
+  }
+  #container .main .identify #btnMain {
+    font-size: 1.4em;
+  }
+  #container #page #btnBar {
+    right: 5%;
+  }
+  #container #page #about {
+    margin: 40px auto;
+    max-width: 280px;
+  }
+  #container #page #about .row .col-lg-5 .developper {
+    font-size: 2.2em;
+  }
+  #container #page #about .row .col-lg-7 .img-fluid {
+    height: 300px;
+  }
+  #container #page #projets {
+    margin: 80px auto;
+  }
+  #container #page #projets #listProjets {
+    height: 100px;
+    display: flex;
+    overflow: auto;
+    flex-direction: row;
+    max-width: 270px;
+    margin: 20px auto;
+    margin-left: 24px;
+  }
+  #container #page #projets #listProjets .col-lg-4 .img-fluid {
+    height: 100px;
+  }
+  #container #page #projets #infoProjet .col-lg-7 #projetImage {
+    height: 280px;
+    margin-top: -10px;
+    margin-right: 49px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .pitch {
+    font-size: 1.7em;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    flex-direction: row;
+  }
+  #container #page #projets #infoProjet .col-lg-5 .listBtnView button {
+    font-size: 0.9em;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .tools {
+    font-size: 1.4em;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row {
+    height: 120px;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #css {
+    margin-top: 20px;
+  }
+  #container #page #projets #infoProjet .col-lg-5 #projetFrameworks .row .col-lg-4 #js {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

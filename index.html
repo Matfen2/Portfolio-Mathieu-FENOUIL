@@ -11,93 +11,135 @@
 </head>
 <body>
   <section id="container">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse justify-content-center">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#main" id="btnMain">accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about" id="btnAbout">à propos de moi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projets" id="btnProjets">réalisations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact" id="btnContact">contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- MAIN -->
-    <div id="main">
-      <div class="row">
-        <div class="col-lg-8">
-          <h2 class="identity">MATHIEU FENOUIL</h2>
-          <p class="developper">développeur web front-end</p>
-          <p class="search">Recherche d'une alternance pour le titre de développeur web avec OpenClassrooms, avec une présence de 3 semaines en
-          entreprise par mois.</p>
-          <div class="listBtnHref">
-            <a href="https://github.com/Matfen2"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mathieu-fenouil/"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="/assets/picts/CV Mathieu FENOUIL.pdf" download="CV MATHIEU FENOUIL">
-              <i class="fas fa-download"></i>
-            </a>
-
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <img src="/assets/picts/photoMe.png" class="img-fluid w-100" alt="photoMe">
-        </div>
+    <div class="main">
+      <div class="identify">
+        <h2 class="name">MATHIEU FENOUIL</h2>
+        <p class="jobs">Développeur Web Front-End</p>
+        <button type="button" id="btnMain">DETAILS</button>
       </div>
     </div>
-    <!-- ABOUT -->
-    <div id="about">
-
-    </div>
-    <!-- PROJETS -->
-    <div id="projets">
-      <div class="row" id="listProjets">
-        <div class="col-lg-4">
-          <img src="/assets/picts/SpiritsGamerLogo.png" class="img-fluid w-100 logo" data-id="1" alt="SpiritsGamerLogo">
+    <div id="page">
+      <button type="button" id="btnBar" data-bs-toggle="offcanvas" data-bs-target="#showCanvas"><i
+          class="fas fa-bars"></i></button>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about" id="btnAbout">à propos de moi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projets" id="btnProjets">réalisations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" id="btnContact">contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <img src="/assets/picts/soulsHeroesLogo.png" class="img-fluid w-100 logo" data-id="2" alt="soulsHeroesLogo">
-        </div>
-        <div class="col-lg-4">
-          <img src="/assets/picts/tlouLogo.png" class="img-fluid w-100 logo" data-id="3" alt="tlouLogo">
+      </nav>
+      <!-- ABOUT -->
+      <div id="about">
+        <div class="row">
+          <div class="col-lg-5">
+            <h2 class="identity">MATHIEU FENOUIL</h2>
+            <p class="developper">développeur web front-end</p>
+            <p class="search">Recherche d'une alternance pour le titre de développeur web avec OpenClassrooms, avec une
+              présence
+              de 3 semaines en
+              entreprise par mois.</p>
+            <div class="listBtnHref">
+              <a href="https://github.com/Matfen2"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/mathieu-fenouil/"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="/assets/picts/CV Mathieu FENOUIL.pdf" download="CV MATHIEU FENOUIL">
+                <i class="fas fa-download"></i>
+              </a>
+      
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <img src="/assets/picts/photoMe1 (1).jpg" class="img-fluid w-100" alt="photoMe">
+          </div>
         </div>
       </div>
-      <div class="row" id="infoProjet">
-        <div class="col-lg-7">
-          <img src="" class="img-fluid w-100" id="projetImage" alt="showSite">
-        </div>
-        <div class="col-lg-5">
-          <p class="pitch" id="projetPitch"></p>
-          <div class="listBtnView">
-            <button type="button" id="btnWeb"><a id="projetWebLink" href="#">SITE WEB</a></button>
-            <button type="button" id="btnCode"><a id="projetSourceLink" href="#">CODE SOURCE</a></button>
+      <!-- PROJETS -->
+      <div id="projets">
+        <div class="row" id="listProjets">
+          <div class="col-lg-4 col-md-4">
+            <img src="/assets/picts/SpiritsGamerLogo.png" class="img-fluid w-100 logo" data-id="1" alt="SpiritsGamerLogo">
           </div>
-          <div class="frameworks" id="projetFrameworks">
-            <h2 class="tools">Outils Utilisés :</h2>
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-12">
-                <i class="fa-brands fa-angular"></i>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12">
-                <i class="fa-brands fa-js"></i>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12">
-                <i class="fa-brands fa-node"></i>
+          <div class="col-lg-4 col-md-4">
+            <img src="/assets/picts/soulsHeroesLogo.png" class="img-fluid w-100 logo" data-id="2" alt="soulsHeroesLogo">
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <img src="/assets/picts/tlouLogo.png" class="img-fluid w-100 logo" data-id="3" alt="tlouLogo">
+          </div>
+        </div>
+        <div class="row" id="infoProjet">
+          <div class="col-lg-7">
+            <img src="" class="img-fluid w-100" id="projetImage" alt="showSite">
+          </div>
+          <div class="col-lg-5">
+            <p class="pitch" id="projetPitch"></p>
+            <div class="listBtnView">
+              <button type="button" id="btnWeb"><a id="projetWebLink" href="#">SITE WEB</a></button>
+              <button type="button" id="btnCode"><a id="projetSourceLink" href="#">CODE SOURCE</a></button>
+            </div>
+            <div class="frameworks" id="projetFrameworks">
+              <h2 class="tools">Outils Utilisés :</h2>
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <img src="/assets/picts/htmlLogo.png" id="html" class="img-fluid w-100" alt="htmlLogo">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <img src="/assets/picts/cssLogo.png" id="css" class="img-fluid w-100" alt="cssLogo">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <img src="/assets/picts/jsLogo.png" id="js" class="img-fluid w-100" alt="jsLogo">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- CONTACT -->
+      <div id="contact">
+        <div class="listInfoContact">
+          <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <p>06 05 15 24 23</p>
+          </div>
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>matfen2.0@outlook.fr</p>
+          </div>
+        </div>
+        <form method="post">
+          <input type="text" name="user" id="user" placeholder="Nom d'utilisateur">
+          <input type="email" name="email" id="email" placeholder="Adresse email">
+          <textarea name="message" id="message" cols="90" rows="17" placeholder="Message"></textarea>
+          <button type="submit" id="btnSend">ENVOYER </button>
+        </form>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="showCanvas" aria-labelledby="showCanvasLabel">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about" id="btnAboutCanvas">à propos de moi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projets" id="btnProjetsCanvas">réalisations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="btnContactCanvas">contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
+
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

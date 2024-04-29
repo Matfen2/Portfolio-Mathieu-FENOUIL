@@ -35,107 +35,317 @@ body {
 }
 
 #container {
-  .navbar {
-    width: 100%;
-    margin: 40px auto;
-    max-width: 940px;
-    border-radius: 20px;
-    background: transparent;
-    border: 2px solid $firstColor;
-    .container-fluid {
-      .collapse {
-        .navbar-nav {
-          column-gap: 80px;
-          .nav-item {
-            .nav-link {
-              font-size: 1.5em;
-              color: $firstColor;
-              letter-spacing: 2px;
-              font-family: $firstFont;
-              text-transform: uppercase;
-            }
+  .main {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    .identify {
+      text-align: center;
+      .name {
+        font-size: 3.8em;
+        letter-spacing: 2px;
+        color: $firstColor;
+        font-family: $firstFont;
+      }
+      .jobs {
+        margin-top: -16px;
+        letter-spacing: 2px;
+        font-size: 3.0em;
+        color: $firstColor;
+        font-family: $thirdFont;
+      }
+      #btnMain {
+        margin-top: -15px;
+        padding: 2px 9px 2px 9px;
+        font-size: 1.8em;
+        border-radius: 6px;
+        color: $firstColor;
+        letter-spacing: 2px;
+        font-family: $secondFont;
+        background: transparent;
+        transition: all 0.2s ease;
+        border: 2px solid $firstColor;
+        &:hover {
+          color: $secondColor;
+          background: $firstColor;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 9px 5px $firstColor;
           }
-        }
       }
     }
   }
-  // MAIN
-  #main {
-    width: 100%;
-    margin: auto;
-    height: 700px;
-    max-width: 1500px;
-    .row {
-      .col-lg-8 {
-        margin: 60px auto;
-        .identity {
-          font-size: 2.8em;
-          color: $firstColor;
-          font-family: $thirdFont;
-        }
-        .developper {
-          font-size: 3.8em;
-          letter-spacing: 2px;
-          color: $firstColor;
-          font-family: $secondFont;
-        }
-        .search {
-          margin-top: -5px;
-          font-size: 2.5em;
-          letter-spacing: 2px;
-          color: $firstColor;
-          font-family: $thirdFont;
-        }
-        .listBtnHref {
-          margin-top: 30px;
-          text-align: center;
-          a {
-            text-decoration: none;
-            .fa-download, .fa-linkedin-in, .fa-github {
-              font-size: 2.8em;
-              margin-right: 120px;
-              color: $firstColor;
-              transition: all 0.20ms ease;
-              &:hover {
-                transform: scale(1.1);
-                text-shadow: 0 0 5px $firstColor, 0 0 10px $firstColor, 2px 2px 5px rgba(206,89,55,0);
+  #page {
+    display: none;
+     #btnBar {
+      top: 2%;
+      right: 3%;
+      display: none;
+      cursor: pointer;
+      font-size: 1.7em;
+      color: $firstColor;
+      position: absolute;
+      border: transparent;
+      background: transparent;
+      }
+    .navbar {
+      top: 2%;
+      left: 50%;
+      width: 100%;
+      position: relative;
+      max-width: 740px;
+      border-radius: 20px;
+      transform: translate(-50%, 60%);
+      background: transparent;
+      border: 2px solid $firstColor;
+      .container-fluid {
+        .collapse {
+          .navbar-nav {
+            column-gap: 80px;
+            .nav-item {
+              .nav-link {
+                font-size: 1.5em;
+                color: $firstColor;
+                letter-spacing: 2px;
+                font-family: $firstFont;
+                text-transform: uppercase;
               }
             }
           }
         }
       }
-      .col-lg-4 {
-        .img-fluid {
-          height: 600px;
+    }
+    // ABOUT
+    #about {
+      width: 100%;
+      margin: 100px auto;
+      height: 700px;
+      max-width: 1600px;
+      .row {
+        .col-lg-5 {
+          margin: 60px auto;
+          .identity {
+            font-size: 2.8em;
+            color: $firstColor;
+            font-family: $thirdFont;
+          }
+          .developper {
+            font-size: 3.0em;
+            letter-spacing: 2px;
+            color: $firstColor;
+            font-family: $secondFont;
+          }
+          .search {
+            margin-top: -5px;
+            font-size: 2.0em;
+            letter-spacing: 2px;
+            color: $firstColor;
+            font-family: $thirdFont;
+          }
+          .listBtnHref {
+            margin-top: 30px;
+            text-align: center;
+            a {
+              text-decoration: none;
+              .fa-download, .fa-linkedin-in, .fa-github {
+                font-size: 2.8em;
+                margin-right: 120px;
+                color: $firstColor;
+                transition: all 0.20ms ease;
+                &:hover {
+                  transform: scale(1.1);
+                  text-shadow: 0 0 5px $firstColor, 0 0 10px $firstColor, 2px 2px 5px rgba(206,89,55,0);
+                }
+              }
+            }
+          }
+        }
+        .col-lg-7 {
+          .img-fluid {
+            height: 600px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    // PROJETS
+    #projets {
+      display: none;
+      margin: 80px auto;
+      #listProjets {
+        margin: auto;
+        max-width: 1200px;
+        .col-lg-4 {
+          .img-fluid {
+            padding: -15px;
+            height: 120px;
+            cursor: pointer;
+            max-width: 450px;
+            opacity: 0.7;
+            transition: all 0.2s ease;
+            &:hover {
+              opacity: 1.0;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+      #infoProjet {
+        padding: 25px;
+        margin-top: 20px;
+        .col-lg-7 {
+          #projetImage {
+            height: 550px;
+          }
+        }
+        .col-lg-5 {
+          margin-top: 30px;
+          .pitch {
+            font-size: 1.9em;
+            color: $firstColor;
+            font-family: $secondFont;
+          }
+          .listBtnView {
+            margin-top: 30px;
+            text-align: center;
+            button {
+              font-size: 1.5em;
+              color: $firstColor;
+              margin: 0px 15px 0px 15px;
+              background: transparent;
+              font-family: $thirdFont;
+              border: 2px solid $firstColor;
+              transition: all 0.20s ease;
+              &:hover {
+                color: $secondColor;
+                background: $firstColor;
+                transform: scale(1.1);
+                box-shadow: 0px 1px 9px 5px $firstColor;
+              }
+              a {
+                color: $firstColor;
+                text-decoration: none;
+                &:hover {
+                  color: $secondColor;
+                }
+              }
+            }
+          }
+          #projetFrameworks {
+            margin-top: 28px;
+            .tools {
+              font-size: 2.0em;
+              text-align: center;
+              letter-spacing: 2px;
+              color: $firstColor;
+              font-family: $firstFont;
+            }
+            .row {
+              text-align: center;
+              margin-top: 28px;
+              .col-lg-4 {
+                #html {
+                  height: 120px;
+                  max-width: 120px;
+                }
+                #css {
+                  height: 120px;
+                  max-width: 100px;
+                }
+                #js {
+                  height: 110px;
+                  margin-top: 10px;
+                  max-width: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // CONTACT
+    #contact {
+      display: none;
+      margin: 90px auto;
+      text-align: center;
+      .listInfoContact {
+        display: flex;
+        column-gap: 80px;
+        margin: 30px auto;
+        justify-content: center;
+        flex-direction: row;
+        .phone, .email {
+          .fa-solid {
+            font-size: 1.9em;
+            color: $firstColor;
+          }
+          p {
+              margin-top: 10px;
+              font-size: 1.6em;
+              color: $firstColor;
+              font-family: $thirdFont;
+            }
+        }
+      }
+      form {
+        display: flex;
+        margin-top: -30px;
+        flex-direction: column;
+        #user, #email, #message {
+          width: 35%;
+          padding: 10px;
+          border-radius: 10px;
+          margin: 10px auto;
+        }
+        #btnSend {
+          padding: 8px;
+          font-size: 1.2em;
+          cursor: pointer;
+          margin: 4px auto;
+          border-radius: 5px;
+          color: $firstColor;
+          font-family: $thirdFont;
+          background: transparent;
+          transition: all 0.20s ease;
+          border: 2px solid $firstColor;
+          &:hover {
+            color: $secondColor;
+            background: $firstColor;
+            transform: scale(1.1);
+            box-shadow: 0px 1px 9px 5px $firstColor;
+          }
         }
       }
     }
   }
-  // ABOUT
-  .about {
-    display: none;
-  }
-  // PROJETS
-  #projets {
-    display: none;
-    margin: 30px auto;
-    #listProjets {
-      margin: auto;
-      max-width: 1200px;
-      .col-lg-4 {
-        .img-fluid {
-          padding: -15px;
-          height: 150px;
-          max-width: 450px;
-        }
-      }
+  #showCanvas {
+    width: 100%;
+    height: 210px;
+    max-width: 300px;
+    border-radius: 0px 0px 0px 10px;
+    border: 2px solid $firstColor;
+    background-color: $secondColor;
+    .btn-close {
+      top: -5%;
+      left: -1%;
+      position: relative;
+      font-size: 2.0em;
+      color: $firstColor;
+      border: transparent;
+      background: transparent;
     }
-    #infoProjet {
-      padding: 25px;
-      margin-top: 20px;
-      .col-lg-7 {
-        #projetImage {
-          height: 550px;
+    .offcanvas-body {
+      margin-top: -30px;
+      text-align: center;
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            font-size: 1.5em;
+            color: $firstColor;
+            letter-spacing: 2px;
+            font-family: $firstFont;
+            text-transform: uppercase;
+          }
         }
       }
     }
@@ -144,22 +354,595 @@ body {
 
 @media screen and (max-width: 1440px) {
   #container {
-    .navbar {
-      margin: 80px auto;
+    .main {
+      .identify {
+        .name {
+          font-size: 4.0em;
+        }
+        .jobs {
+          width: 1000px;
+          font-size: 3.6em;
+        }
+        #btnMain {
+          font-size: 2.5em;
+        }
+      }
     }
-    #main {
-      .row {
-        .col-lg-8 {
-          padding-left: 120px;
-          margin: 120px auto;
-          .identity {
-            font-size: 2.0em;
+    #page {
+      .navbar {
+        max-width: 860px;
+        .container-fluid {
+          .collapse {
+            .navbar-nav {
+              .nav-item {
+                .nav-link {
+                  font-size: 1.8em;
+                }
+              }
+            }
           }
-          .developper {
-            font-size: 2.8em;
+        }
+      }
+      #about {
+        margin: 120px auto;
+        max-width: 1400px;
+      }
+      #projets {
+        margin: 80px auto;
+        #listProjets {
+          margin: 20px auto;
+          .col-lg-4 {
+            .img-fluid {
+              height: 180px;
+            }
           }
-          .search {
-            font-size: 2.0em;
+        }
+        #infoProjet {
+          margin: 20px auto;
+          max-width: 1400px;
+          .col-lg-7 {
+            #projetImage {
+              height: 570px;
+            }
+          }
+        }
+      }
+      #contact {
+        margin: 90px auto;
+        .listInfoContact {
+          .phone, .email {
+            .fa-solid {
+              font-size: 2.8em;
+            }
+            p {
+              font-size: 1.9em;
+            }
+          }
+        }
+        form {
+          #user, #email, #message {
+            width: 45%;
+            margin: 15px auto;
+          }
+          #btnSend {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+    #showCanvas {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #container {
+    .main {
+      .identify {
+        .name {
+          font-size: 3.7em;
+        }
+        .jobs {
+          width: 1000px;
+          font-size: 3.2em;
+        }
+        #btnMain {
+          font-size: 2.2em;
+        }
+      }
+    }
+    #page {
+      .navbar {
+        max-width: 750px;
+        .container-fluid {
+          .collapse {
+            .navbar-nav {
+              .nav-item {
+                .nav-link {
+                  font-size: 1.1em;
+                }
+              }
+            }
+          }
+        }
+      }
+      #about {
+        margin: 90px auto;
+        max-width: 920px;
+        .row {
+          .col-lg-5 {
+            .identity {
+              font-size: 2.0em;
+            }
+            .developper {
+              font-size: 1.8em;
+            }
+            .search {
+              font-size: 1.8em;
+            }
+            .listBtnHref {
+              display: flex;
+              margin-left: 80px;
+              flex-direction: row;
+              justify-content: center;
+              a {
+                .fa-download, .fa-linkedin-in, .fa-github {
+                  font-size: 2.0em;
+                  margin-right: 100px;
+                }
+              }
+            }
+          }
+          .col-lg-7 {
+            .img-fluid {
+              height: 650px;
+            }
+          }
+        }
+      }
+      #projets {
+        margin: 80px auto;
+        #listProjets {
+          max-width: 800px;
+          margin: 20px auto;
+          .col-lg-4 {
+            .img-fluid {
+              height: 120px;
+            }
+          }
+        }
+        #infoProjet {
+          margin: 20px auto;
+          max-width: 980px;
+          .col-lg-7 {
+            #projetImage {
+              height: 500px;
+            }
+          }
+          .col-lg-5 {
+            .pitch {
+              height: 90px;
+              overflow: auto;
+              text-align: center;
+            }
+            .listBtnView {
+              #btnWeb {
+                margin-bottom: 5px;
+              }
+              #btnCode {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+      #contact {
+        margin: 90px auto;
+        .listInfoContact {
+          .phone, .email {
+            .fa-solid {
+              font-size: 2.8em;
+            }
+            p {
+              font-size: 1.9em;
+            }
+          }
+        }
+        form {
+          #message {
+            height: 290px;
+          }
+          #btnSend {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+    #showCanvas {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #container {
+    .main {
+      .identify {
+        .name {
+          font-size: 3.7em;
+        }
+        .jobs {
+          width: 760px;
+          font-size: 3.2em;
+        }
+        #btnMain {
+          font-size: 2.0em;
+        }
+      }
+    }
+    #page {
+      #btnBar {
+        display: block;
+      }
+      .navbar {
+        display: none;
+      }
+      #about {
+        margin: 60px auto;
+        max-width: 800px;
+        .row {
+          .col-lg-5 {
+            text-align: center;
+            .identity {
+              font-size: 2.6em;
+            }
+            .developper {
+              font-size: 2.4em;
+            }
+            .search {
+              font-size: 1.6em;
+            }
+            .listBtnHref {
+              top: 0%;
+              left: 50%;
+              display: flex;
+              position: relative;
+              flex-direction: row;
+              justify-content: center;
+              transform: translate(-53%, 10%);
+            }
+          }
+          .col-lg-7 {
+            margin-top: -20px;
+            .img-fluid {
+              height: 420px;
+            }
+          }
+        }
+      }
+      #projets {
+        margin: 80px auto;
+        #listProjets {
+          display: flex;
+          flex-direction: row;
+          max-width: 800px;
+          margin: 20px auto;
+          .col-lg-4 {
+            .img-fluid {
+              height: 100px;
+            }
+          }
+        }
+        #infoProjet {
+          margin: 20px auto;
+          max-width: 880px;
+          .col-lg-7 {
+            #projetImage {
+              height: 340px;
+            }
+          }
+          .col-lg-5 {
+            .pitch {
+              height: 90px;
+              overflow: auto;
+              text-align: center;
+            }
+            .listBtnView {
+              margin-top: -10px;
+              #btnWeb {
+                margin-bottom: 5px;
+              }
+              #btnCode {
+                margin-top: 10px;
+              }
+            }
+            #projetFrameworks {
+              display: flex;
+              margin-top: 90px;
+              justify-content: center;
+              flex-direction: row;
+              .tools {
+                font-size: 1.7em;
+              }
+              .row {
+                margin-top: -60px;
+                .col-lg-4 {
+                  .img-fluid {
+                    height: 60px;
+                    margin: 0px 20px 0px 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      #contact {
+        margin: 140px auto;
+        .listInfoContact {
+          .phone, .email {
+            .fa-solid {
+              font-size: 2.8em;
+            }
+            p {
+              font-size: 1.9em;
+            }
+          }
+        }
+        form {
+          #message {
+            height: 290px;
+          }
+          #btnSend {
+            font-size: 1.4em;
+          }
+        }
+      }
+    }
+    #showCanvas {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    .main {
+      .identify {
+        .name {
+          font-size: 3.2em;
+        }
+        .jobs {
+          width: 560px;
+          font-size: 2.9em;
+        }
+        #btnMain {
+          font-size: 1.7em;
+        }
+      }
+    }
+    #page {
+      #btnBar {
+        display: block;
+      }
+      .navbar {
+        display: none;
+      }
+      #about {
+        margin: 40px auto;
+        max-width: 620px;
+        .row {
+          .col-lg-5 {
+            text-align: center;
+            .identity {
+              font-size: 2.6em;
+            }
+            .developper {
+              font-size: 2.4em;
+            }
+            .search {
+              font-size: 1.6em;
+            }
+            .listBtnHref {
+              top: 0%;
+              left: 50%;
+              display: flex;
+              position: relative;
+              flex-direction: row;
+              justify-content: center;
+              transform: translate(-55%, 10%);
+            }
+          }
+          .col-lg-7 {
+            .img-fluid {
+              height: 360px;
+            }
+          }
+        }
+      }
+      #projets {
+        margin: 80px auto;
+        #listProjets {
+          display: flex;
+          flex-direction: row;
+          max-width: 700px;
+          margin: 20px auto;
+        }
+        #infoProjet {
+          #projetFrameworks {
+            display: flex;
+            margin-top: 90px;
+            justify-content: center;
+            flex-direction: row;
+            .tools {
+              font-size: 1.4em;
+            }
+          }
+        }
+      }
+      #contact {
+        margin: 80px auto;
+        .listInfoContact {
+          display: flex;
+          flex-direction: column;
+          .phone, .email {
+            .fa-solid {
+              font-size: 2.2em;
+            }
+            p {
+              font-size: 1.6em;
+            }
+          }
+        }
+      }
+    }
+  }
+  #showCanvas {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #container {
+    .main {
+      .identify {
+        .name {
+          font-size: 3.2em;
+        }
+        .jobs {
+          width: 420px;
+          font-size: 2.9em;
+        }
+        #btnMain {
+          font-size: 1.7em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #container {
+    .main {
+      .identify {
+        .name {
+          font-size: 2.6em;
+        }
+        .jobs {
+          width: 350px;
+          font-size: 2.2em;
+        }
+        #btnMain {
+          font-size: 1.4em;
+        }
+      }
+    }
+    #page {
+      #btnBar {
+        display: block;
+      }
+      .navbar {
+        display: none;
+      }
+      #about {
+        margin: 40px auto;
+        max-width: 320px;
+        .row {
+          .col-lg-5 {
+            text-align: center;
+            .identity {
+              font-size: 2.2em;
+            }
+            .developper {
+              font-size: 2.0em;
+            }
+            .search {
+              font-size: 1.0em;
+            }
+            .listBtnHref {
+              top: 0%;
+              left: 50%;
+              display: flex;
+              position: relative;
+              flex-direction: row;
+              justify-content: center;
+              transform: translate(-76%, 10%);
+              a {
+                .fa-download, .fa-linkedin-in, .fa-github {
+                  font-size: 2.2em;
+                  margin-right: 50px;
+                }
+              }
+            }
+          }
+          .col-lg-7 {
+            .img-fluid {
+              height: 360px;
+            }
+          }
+        }
+      }
+      #projets {
+        margin: 80px auto;
+        #listProjets {
+          height: 100px;
+          display: flex;
+          overflow: auto;
+          flex-direction: row;
+          max-width: 350px;
+          margin: 20px auto;
+          .col-lg-4 {
+            .img-fluid {
+              height: 100px;
+            }
+          }
+        }
+        #infoProjet {
+          .col-lg-7 {
+            #projetImage {
+              height: 300px;
+            }
+          }
+          .col-lg-5 {
+            .listBtnView {
+              display: flex;
+              align-items: center;
+              margin-left: 42px;
+              flex-direction: row;
+              button {
+                font-size: 1.1em;
+              }
+            }
+            #projetFrameworks {
+              display: flex;
+              margin-top: 20px;
+              flex-direction: column;
+              .tools {
+                font-size: 1.8em;
+              }
+              .row {
+                height: 120px;
+                overflow: auto;
+                margin-top: 10px;
+                .col-lg-4 {
+                  #css {
+                    margin-top: 20px;
+                  }
+                  #js {
+                    margin-top: 20px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+      #contact {
+        form {
+          #user, #email, #message {
+            width: 65%;
           }
         }
       }
@@ -167,4 +950,209 @@ body {
   }
 }
 
+@media screen and (max-width: 375px) {
+  #container {
+    .main {
+      .identify {
+        .name {
+          font-size: 2.6em;
+        }
+        .jobs {
+          width: 280px;
+          font-size: 2.0em;
+        }
+        #btnMain {
+          font-size: 1.4em;
+        }
+      }
+    }
+    #page {
+      #btnBar {
+        right: 5%;
+      }
+      #about {
+        margin: 30px auto;
+        max-width: 320px;
+        .row {
+          .col-lg-7 {
+            .img-fluid {
+              height: 390px;
+            }
+          }
+        }
+      }
+      #projets {
+        margin: 80px auto;
+        #listProjets {
+          height: 100px;
+          display: flex;
+          overflow: auto;
+          flex-direction: row;
+          max-width: 300px;
+          margin: 20px auto;
+          margin-right: 45px;
+          .col-lg-4 {
+            .img-fluid {
+              height: 100px;
+            }
+          }
+        }
+        #infoProjet {
+          .col-lg-7 {
+            #projetImage {
+              height: 280px;
+              margin-top: -10px;
+              margin-left: -8px;
+            }
+          }
+          .col-lg-5 {
+            .pitch {
+              margin-right: 20px;
+            }
+            .listBtnView {
+              display: flex;
+              align-items: center;
+              margin-left: 15px;
+              flex-direction: row;
+              button {
+                font-size: 0.9em;
+              }
+            }
+            #projetFrameworks {
+              display: flex;
+              margin-top: 50px;
+              flex-direction: column;
+              .tools {
+                font-size: 1.8em;
+              }
+              .row {
+                height: 120px;
+                overflow: auto;
+                margin-top: 10px;
+                .col-lg-4 {
+                  #css {
+                    margin-top: 20px;
+                  }
+                  #js {
+                    margin-top: 20px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+      #contact {
+        form {
+          #user, #email, #message {
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #container {
+    .main {
+      .identify {
+        .name {
+          font-size: 2.6em;
+        }
+        .jobs {
+          width: 280px;
+          font-size: 2.0em;
+        }
+        #btnMain {
+          font-size: 1.4em;
+        }
+      }
+    }
+    #page {
+      #btnBar {
+        right: 5%;
+      }
+      #about {
+        margin: 40px auto;
+        max-width: 280px;
+        .row {
+          .col-lg-5 {
+            .developper {
+              font-size: 2.2em;
+            }
+          }
+          .col-lg-7 {
+            .img-fluid {
+              height: 300px;
+            }
+          }
+        }
+      }
+      #projets {
+        margin: 80px auto;
+        #listProjets {
+          height: 100px;
+          display: flex;
+          overflow: auto;
+          flex-direction: row;
+          max-width: 270px;
+          margin: 20px auto;
+          margin-left: 24px;
+          .col-lg-4 {
+            .img-fluid {
+              height: 100px;
+            }
+          }
+        }
+        #infoProjet {
+          .col-lg-7 {
+            #projetImage {
+              height: 280px;
+              margin-top: -10px;
+              margin-right: 49px;
+            }
+          }
+          .col-lg-5 {
+            .pitch {
+              font-size: 1.7em;
+            }
+            .listBtnView {
+              display: flex;
+              align-items: center;
+              margin-left: 15px;
+              flex-direction: row;
+              button {
+                font-size: 0.9em;
+              }
+            }
+            #projetFrameworks {
+              display: flex;
+              margin-top: 40px;
+              flex-direction: column;
+              .tools {
+                font-size: 1.4em;
+              }
+              .row {
+                height: 120px;
+                overflow: auto;
+                margin-top: 10px;
+                .col-lg-4 {
+                  #css {
+                    margin-top: 20px;
+                  }
+                  #js {
+                    margin-top: 20px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
 
